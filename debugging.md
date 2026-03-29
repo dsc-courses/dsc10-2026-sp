@@ -5,18 +5,14 @@ description: Pointers on how to solve common technical issues.
 nav_order: 5
 ---
 
-<!-- prettier-ignore-start -->
-
 # 🐞 Debugging
 {:.no_toc}
 
 ## Table of contents
-{:.no_toc}
+{: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-<!-- prettier-ignore-end -->
 
 [github]: {{ site.urls.github }}
 
