@@ -9,24 +9,21 @@ import sys
 import numpy as np
 
 # Edit these variables before running script
-CSV_PATH = "Lecture Schedule – DSC 10, Winter 2026 - wi26.csv"  #CHANGE CSV PATH for your computer
+CSV_PATH = "Lecture Schedule – DSC 10, Spring 2026 - sp26.csv"  #CHANGE CSV PATH for your computer
 DATE_FORMAT = "DATE MONTH/DAY"
 YEAR = 2026
 START_FROM_WEEK = 1 #only future weeks!
 
 
 def fill_missing_vals(df):
-    df["Week"] = df["Week"].fillna(method="ffill").astype(int)
-    df["Title"] = df["Title"].fillna(method="ffill").astype(str)
-    df["LectureNum"] = df["LectureNum"].fillna(0).astype(int)
-    df["Lecture"] = df["Lecture"].fillna("").astype(str)
-    df["Lecturer"] = df["Lecturer"].fillna("").astype(str)  # NEW
-    df["Lab"] = df["Lab"].fillna("").astype(str)
-    df["Homework"] = df["Homework"].fillna("").astype(str)
+    df["Week"] = df["Week"].ffill().astype(int)
+    df["Title"] = df["Title"].ffill().astype(str)
     df["Readings"] = df["Readings"].fillna("").astype(str)
     df["Links"] = df["Links"].fillna("").astype(str)
     df["Keywords"] = df["Keywords"].fillna("").astype(str)
+    df["Homework"] = df["Homework"].fillna("").astype(str)
     df["Discussion"] = df["Discussion"].fillna("").astype(str)
+    df["Lab"] = df["Lab"].fillna("").astype(str)
     df["Quiz"] = df["Quiz"].fillna("").astype(str)
     df["Survey"] = df["Survey"].fillna("").astype(str)
     return df
@@ -57,6 +54,9 @@ def round_format(i):
 
 
 def date_conv(date):
+    if pd.isna(date):
+        return None
+    
     if DATE_FORMAT == "DATE. MONTH. DAY":
         try:
             _, month, day = date.split(" ")
@@ -104,9 +104,10 @@ days:"""
 
     for day in week.itertuples(index=False):
         date = day.Date
+        if pd.isna(date):
+            continue 
         lec_num = day.LectureNum
         lecture = day.Lecture
-        lecturer = day.Lecturer   # NEW
         homework = day.Homework
         lab = day.Lab
         readings = day.Readings
@@ -124,12 +125,11 @@ days:"""
     events:"""
 
         # Lecture number
-        if lec_num != 0:
+        if pd.notna(lec_num) and lec_num != 0:
             outstr += f"""
-      - name: LEC {lec_num}
+      - name: LEC {int(lec_num)}
         type: lecture
         title: {lecture}
-        lecturer: {lecturer}
         url:
         html:
         podcast:
@@ -161,8 +161,8 @@ days:"""
         title: {lab_name}
         url: """
 
-        elif "Exam" in lecture:
-            outstr += f"""      
+        elif lecture and "Exam" in str(lecture):
+            outstr += f"""
       - name: EXAM
         type: exam
         title: <b>{lecture}</b>"""

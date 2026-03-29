@@ -2,40 +2,56 @@
 title: Week 7 – Central Limit Theorem
 weekNumber: 7
 days:
-  - date: 2026-2-16
-    events:
-      - markdown_content: <b>No Lecture (Presidents Day)</b>
-  - date: 2026-2-17
-    events:
-      - name: LAB 4
-        type: lab
-        title: Simulation, Sampling, & Bootstrapping
-        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-wi&subPath=labs/lab4/lab4.ipynb
-  - date: 2026-2-18
+  - date: 2026-5-11
     events:
       - name: LEC 17
         type: lecture
         title: The Central Limit Theorem
-        lecturer: Peter
-        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-wi&subPath=lectures/lec17/lec17-live.ipynb
-        html: resources/lectures/lec17/lec17.html
-        podcast:
-        readings:
-      - name: HW 4
-        type: hw
-        title: Simulation, Sampling, & Bootstrapping
-        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-wi&subPath=homeworks/hw4/hw4.ipynb
-  - date: 2026-2-20
-    events:
-      - name: LEC 18
-        type: lecture
-        title: Choosing Sample Sizes, Statistical Models
-        lecturer: Peter
-        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-wi&subPath=lectures/lec18/lec18-live.ipynb
-        html: resources/lectures/lec18/lec18.html
+        url:
+        html:
         podcast:
         readings:
           - name: CIT 14.4-14.5
             url: https://inferentialthinking.com/chapters/14/4/Central_Limit_Theorem.html
         keywords: distribution of the sample mean, square root law, CLT-based CIs
+      - name: HW 4
+        type: hw
+        title: Simulation, Sampling, & Bootstrapping
+        url:
+      - name: DISC 7
+        type: disc
+        title: The Normal Distribution and the CLT
+        url:
+  - date: 2026-5-13
+    events:
+      - name: LEC 18
+        type: lecture
+        title: Choosing Sample Sizes, Statistical Models
+        url:
+        html:
+        podcast:
+        readings:
+          - name: CIT 14.6
+            url: https://inferentialthinking.com/chapters/14/6/Choosing_a_Sample_Size.html
+          - name: 11.1
+            url: https://inferentialthinking.com/chapters/11/1/Assessing_a_Model.html
+        keywords: standard deviation of 0s and 1s, np.random.multinomial, Robert Swain jury
+  - date: 2026-5-14
+    events:
+      - name: LAB 5
+        type: lab
+        title: Variability and the Normal Distribution
+        url:
+  - date: 2026-5-15
+    events:
+      - name: LEC 19
+        type: lecture
+        title: Hypothesis Testing
+        url:
+        html:
+        podcast:
+        readings:
+          - name: CIT 11.3
+            url: https://inferentialthinking.com/chapters/11/3/Decisions_and_Uncertainty.html
+        keywords: null and alternative hypotheses, test statistic, fair or unfair coin
 ---
