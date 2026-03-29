@@ -22,7 +22,7 @@ The AI tutor has two modes:
 
 This mode is designed to guide your learning. Instead of giving you direct answers, it helps you think through problems, understand concepts, and build intuition step by step.
 
-<center><img src="../assets/images/img3.png" width="80%" alt="AI Tutor example of guiding hints"></center>
+<center><img src="../assets/images/img2.png" width="40%" alt="example of guiding hints"></center>
 
 ### ChatGPT Mode
 
@@ -63,7 +63,7 @@ In both modes, the AI tutor:
 
 Additionally, Tutor Mode can also retrieve lecture or exam practice problems for quick access.
 
-<center><img src="../assets/images/img2.png" width="80%" alt="AI Tutor debugging example"></center>
+<center><img src="../assets/images/img3.png" width="80%" alt="AI Tutor debugging example"></center>
 
 The AI Tutor is a new resource for this class, and it is a work in progress. Occasionally, it may suggest code or ideas that go beyond what is covered in DSC 10. If that happens, please let us know!
 
