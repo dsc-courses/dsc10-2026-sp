@@ -25,7 +25,7 @@ nav_order: 8
 
 In DSC 10, you'll have access to an artificial intelligence tutoring tool (AI Tutor) directly within your assignments. The interface will appear on the right side of the screen whenever you start working on DSC 10 assignments, making it easy to ask questions and get help in the same place you write your code. The goal of the AI Tutor is to support your learning. Like any resource in this course, the AI Tutor works best when used thoughtfully.
 
-![AI Tutor panel in DataHub](img1.png)
+<center><img src="../assets/images/img1.png" width="80%" alt="AI Tutor interface"></center>
 
 The AI tutor has two modes:
 
@@ -33,7 +33,7 @@ The AI tutor has two modes:
 
 This mode is designed to guide your learning. Instead of giving you direct answers, it helps you think through problems, understand concepts, and build intuition step by step.
 
-<img src="img3.png" width="220" height="450">
+<center><img src="../assets/images/img3.png" width="80%" alt="AI Tutor example of guiding hints"></center>
 
 ### ChatGPT Mode
 
@@ -74,7 +74,7 @@ In both modes, the AI tutor:
 
 Additionally, Tutor Mode can also retrieve lecture or exam practice problems for quick access.
 
-![Debugging Help](img2.png)
+<center><img src="../assets/images/img2.png" width="80%" alt="AI Tutor debugging example"></center>
 
 The AI Tutor is a new resource for this class, and it is a work in progress. Occasionally, it may suggest code or ideas that go beyond what is covered in DSC 10. If that happens, please let us know!
 
