@@ -6,22 +6,9 @@ description: >-
 nav_order: 8
 ---
 
-{:.no_toc}
-
-<!-- prettier-ignore-start -->
 
 # 🤖 AI Tutor
 {:.no_toc}
-
-## Table of contents
-{:.no_toc}
-
-1. TOC
-{:toc}
-
-<!-- prettier-ignore-end -->
-
-# AI Tutor
 
 ## What is the AI Tutor?
 
