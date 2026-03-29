@@ -7,7 +7,7 @@ nav_order: 5
 
 <!-- prettier-ignore-start -->
 
-# 📖 Syllabus
+# 🐞 Debugging
 {:.no_toc}
 
 ## Table of contents
