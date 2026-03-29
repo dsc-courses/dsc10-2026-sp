@@ -26,7 +26,8 @@ exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
 # Check out our [Campuswire discussion forum]({{ site.urls.campuswire }}) for
 # questions and announcements.
 urls:
-  campuswire: &campuswire 'https://campuswire.com/p/G65427605'
+  campuswirejoin: &campuswirejoin 'https://campuswire.com/p/G65427605'
+  campuswire: &campuswire 'https://campuswire.com/c/G65427605' 
   gradescope: &gradescope 'https://www.gradescope.com/courses/1288255'
   reference: &reference 'https://dsc-courses.github.io/bpd-reference/docs/documentation/intro'
   practice: &practice 'https://practice.dsc10.com/'

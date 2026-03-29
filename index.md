@@ -13,8 +13,6 @@ nav_order: 1
 
 {{ site.staffersnobio }}
 
-<!-- {: .success }
->Peter's class will be on Zoom today, Wednesday, November 26th. Please see the pinned post on [Campuswire](https://campuswire.com/c/GF283E889/feed/551) for details of how to join!-->
 
 <!--{: .success }
 >Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist. These are due very soon, on **Saturday, September 27th at 11:59PM**.-->
@@ -31,10 +29,10 @@ This site is **under construction**. Anything you read here is not finalized. Th
 <!--{: .success }
 >**Tip**: When working on assignments, use Ctrl+F on this page to search for a keyword and quickly find the relevant lecture. Click the "✏️ write" button to open a static version of the lecture for reference, which is much faster than loading it on DataHub.
 >
->Also, make sure to use the [reference sheet](https://dsc-courses.github.io/bpd-reference/docs/documentation/intro/) to quickly look up `babypandas` methods and see examples of how they work.
+>Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
 -->
 
-[Jump to the current week](/#week-10-review){: .btn }
+[Jump to the current week](/#week-1-python-basics){: .btn }
 
 {% for module in site.modules %}
 {{ module }}
