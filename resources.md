@@ -25,6 +25,8 @@ These resources will directly complement the content from lectures and assignmen
 - [DSC 10 Reference Sheet](https://dsc-courses.github.io/bpd-reference/docs/documentation/intro/)
 - [`babypandas` notes](https://notes.dsc10.com)
 
+We also have an AI Tutor to help you in this class. [Read more about it here](../ai_tutor) and give it a try!
+
 ### Diagrams
 
 All of the interactive diagrams from lecture, like the one below, are available on this [**Diagrams**](../diagrams) page. Check it out!
@@ -81,7 +83,6 @@ These are some videos we made to supplement a previous iteration of the course. 
 
 Past exams and detailed solutions can be found at [practice.dsc10.com](https://practice.dsc10.com). Use this site to help you prepare for quizzes and exams.
 
-
 ## UC San Diego Links
 - [Data Science Undergraduate Program](https://datascience.ucsd.edu/undergraduate/)
 - [DSC 10 Waitlist and Enrollment](https://datascience.ucsd.edu/current-students/enrolling-in-classes/)
@@ -89,6 +90,3 @@ Past exams and detailed solutions can be found at [practice.dsc10.com](https://p
 - [Library Guide to Data and Statistics](https://ucsd.libguides.com/data-statistics)
 - [Academic Integrity Homepage](https://academicintegrity.ucsd.edu)
 - [Counseling and Psychological Services (CAPS)](https://caps.ucsd.edu)
-
-## Other
-- [Where to find datasets](https://rampure.org/find-datasets)
