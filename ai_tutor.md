@@ -1,12 +1,33 @@
+---
+layout: page
+title: 🤖 AI Tutor
+description: >-
+  Information on the AI Tutor.
+nav_order: 8
+---
+
+<!-- prettier-ignore-start -->
+
+# 🤖 AI Tutor
+{:.no_toc}
+
+## Table of contents
+{:.no_toc}
+
+1. TOC
+{:toc}
+
+<!-- prettier-ignore-end -->
+
 # AI Tutor
 
 ## What is the AI Tutor?
 
-In DSC 10, you'll have access to an artificial intelligence tutoring tool (AI Tutor) directly within your assignments. The interface will appear on the right side of the screen whenever you start working on DSC 10 assignments, making it easy to ask questions and get help in the same place you write your code. The goal of the AI Tutor is to support your learning and like any resource in this course, it works best when used thoughtfully.
+In DSC 10, you'll have access to an artificial intelligence tutoring tool (AI Tutor) directly within your assignments. The interface will appear on the right side of the screen whenever you start working on DSC 10 assignments, making it easy to ask questions and get help in the same place you write your code. The goal of the AI Tutor is to support your learning. Like any resource in this course, the AI Tutor works best when used thoughtfully.
 
 ![AI Tutor panel in DataHub](img1.png)
 
-The AI tutor has two main modes:
+The AI tutor has two modes:
 
 ### Tutor Mode
 
@@ -32,14 +53,14 @@ There isn't a single "right" mode. It all depends on your goals.
 Some general guidance:
 
 - **Use Tutor Mode when:**
-  - You get stuck on a question in an assignment
-  - You want to understand how to solve similar questions on quizzes and exams
-  - You want guided practice rather than answers
+  - You get stuck on a question in an assignment.
+  - You want to understand how to solve similar questions on quizzes and exams.
+  - You want guided practice rather than answers.
 - **Use ChatGPT Mode when:**
-  - You want to see an example or alternative approach
-  - You're exploring topics beyond what we covered in class
+  - You want to see a different example or an alternative approach.
+  - You're exploring topics beyond what we covered in class.
 
-In general, we recommend Tutor Mode when you're working on a particular question in assignment, because it will support your learning by pointing out errors and suggesting possible next steps, but it will not do your work for you. We hope that students who use Tutor Mode will develop a deeper understanding of course material than students who use ChatGPT Mode and students who avoid the AI Tutor altogether. 
+In general, we recommend Tutor Mode when you're working through assignments, because it will support your learning by pointing out errors and suggesting possible next steps, but it will not do your work for you. We hope that students who use Tutor Mode will develop a deeper understanding of course material than students who use ChatGPT Mode and students who avoid the AI Tutor altogether. 
 
 Ultimately, you are responsible for your own learning. Choose the mode that best supports your understanding!
 
@@ -47,11 +68,11 @@ Ultimately, you are responsible for your own learning. Choose the mode that best
 
 In both modes, the AI tutor:
 
-- Has access to your current assignment and code
-- Is familiar with babypandas and DSC 10 course materials 
-- Can help explain concepts, debug code, and guide your approach
+- Has access to your current assignment and code.
+- Is familiar with `babypandas` and DSC 10 course materials.
+- Can help explain concepts, debug code, and guide your approach.
 
-Additional to this, the tutor mode can also retrieve lecture or exam practice problems for quick access.
+Additionally, Tutor Mode can also retrieve lecture or exam practice problems for quick access.
 
 ![Debugging Help](img2.png)
 
@@ -85,4 +106,4 @@ Use the AI Tutor to:
 - Explore ideas
 - Get unstuck
 
-Your goal in DSC 10 is to learn the material and build your own skills. The best way to succeed in this course and beyond is to actively engage with the material and think through problems yourself before using tools like the AI Tutor.
+Your goal in DSC 10 is to learn the material and build your own skills. The best way to succeed in this course and beyond is to actively engage with the material and think through problems on your own before asking for help. When you are stuck, or when you don't understand something, pursing help from the AI Tutor and course staff is highly recommended to help you move forwards!
