@@ -80,7 +80,9 @@ You can attend any lecture section, but if space fills up, priority will be give
 - Section A: MWF 3-3:50PM in [PODEM 1A20][classroom].
 - Section B: MWF 4-4:50PM in [PODEM 1A20][classroom].
 
-Discussions will start in Week 2 on Monday, April 6th. Discussion sections will be focused on quiz and exam preparation. Students will work through problems from past DSC 10 quizzes and exams and be able to get help from course staff. Attending discussion and working through practice problems gives you direct experience with the types of questions you will see on quizzes and exams, which are typically the hardest parts of the course.
+Discussions will start in Week 1 on Monday, March 30th. The first discussion includes some useful instruction and tips for using Jupyter notebooks and Datahub, the programming tools we'll be using in this course. It should be helpful to get you set up and comfortable with the technology you'll be using all quarter. 
+
+Subsequent discussion sections will be focused on quiz and exam preparation. Students will work through problems from past DSC 10 quizzes and exams and be able to get help from course staff. Attending discussion and working through practice problems gives you direct experience with the types of questions you will see on quizzes and exams, which are typically the hardest parts of the course.
 
 **Discussion sections will not be podcasted.** The purpose of discussion is to give you hands-on problem-solving experience, so you really need to attend and participate to reap the benefits. 
 
@@ -138,7 +140,7 @@ Your primary motivation when interacting with course staff should be
 
 ## 🚦 Getting Started
 
-Make sure to complete the four items listed below by **Wednesday, Jan 7th at
+Make sure to complete the four items listed below by **Thursday, April 2nd at
 11:59PM**. If you join the course late, these items are due at 11:59PM the day
 after you join the class.
 
