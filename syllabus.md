@@ -441,7 +441,7 @@ schedule. Please refer to the [homepage of this website](..) for the most up-to-
 
 | | **Monday** | **Tuesday** | **Wednesday** | **Thursday** | **Friday** |
 | **morning** | Lecture | | Lecture | | Lecture |
-| **afternoon** | Discussion (only Week 1) | | | |<b style="color:red">Quiz</b> |
+| **afternoon** | Discussion | | <b style="color:red">Quiz</b> | | |
 | **evening** | <b style="color:red">Homework due</b> | | | <b style="color:red">Lab due</b> | |
 
 ---
