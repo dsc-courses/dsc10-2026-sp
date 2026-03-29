@@ -6,6 +6,8 @@ description: >-
 nav_order: 8
 ---
 
+{:.no_toc}
+
 <!-- prettier-ignore-start -->
 
 # 🤖 AI Tutor
