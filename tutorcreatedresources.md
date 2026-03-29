@@ -64,10 +64,10 @@ As a disclaimer, these materials are provided to help you study, but they are no
 <br>
 
 (<a href="https://docs.google.com/presentation/d/1AmJJzdzS0GF4v2jiRTnvjJUsUFISoq3S/edit#slide=id.p1">source</a>)
--->
+
 
 </center>
-
+-->
 
 ### Common Errors and Keyboard Shortcuts in Jupyter Notebooks 
 #### by Aaron Rasin, Bill Wang, Leena Kang
@@ -133,19 +133,6 @@ As a disclaimer, these materials are provided to help you study, but they are no
 <br>
 
 (<a href="https://www.youtube.com/watch?v=OG-bmeozc1w&ab_channel=MichelleHong">source</a>)
-
-</center>
-
-### String, Series, and Array Methods 
-#### by Sophie Wang
-{: .no_toc }
-<center>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J05wJtO3CEU?si=etN4UZC2oOfzh8fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br>
-
-(<a href="https://www.youtube.com/watch?v=J05wJtO3CEU&ab_channel=SophieWang">source</a>)
 
 </center>
 
