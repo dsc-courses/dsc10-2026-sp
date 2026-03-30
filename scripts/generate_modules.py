@@ -172,7 +172,7 @@ days:"""
           title: <b>{lecture}</b>"""
             else:
                 outstr += f"""
-      - markdown: <b>{lecture}</b>"""
+      - markdown_content: <b>{lecture}</b>"""
 
         if homework:
             outstr = outstr.rstrip()
