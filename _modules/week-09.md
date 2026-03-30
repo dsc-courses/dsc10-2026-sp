@@ -4,6 +4,7 @@ weekNumber: 9
 days:
   - date: 2026-5-25
     events:
+      - markdown: <b>No Lecture (Memorial Day)</b>
       - name: HW 6
         type: hw
         title: Hypothesis Testing and Permutation Testing

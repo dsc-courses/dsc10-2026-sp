@@ -148,9 +148,6 @@ days:"""
                 
             if keywords:
                 outstr += f"""        keywords: {keywords}"""
-        if lec_num == 0 and lecture:
-            outstr += f"""
-      - markdown_content: <b>{lecture}</b>"""
      
         if lab:
             lab_num, lab_name = lab.split(". ")
@@ -160,12 +157,22 @@ days:"""
         type: lab
         title: {lab_name}
         url: """
-
-        elif lecture and "Exam" in str(lecture):
-            outstr += f"""
+            
+        elif pd.isna(lec_num) and pd.notna(lecture) and lecture:
+            if lecture and "Exam" in str(lecture):
+                outstr += f"""
       - name: EXAM
-        type: exam
-        title: <b>{lecture}</b>"""
+          type: exam
+          title: <b>{lecture}</b>"""
+
+            elif lecture and "Review" in str(lecture):
+                outstr += f"""
+      - name: REV
+          type: lecture
+          title: <b>{lecture}</b>"""
+            else:
+                outstr += f"""
+      - markdown: <b>{lecture}</b>"""
 
         if homework:
             outstr = outstr.rstrip()

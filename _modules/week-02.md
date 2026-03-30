@@ -18,6 +18,10 @@ days:
         type: lab
         title: Expressions and Data Types; Pre-test
         url:
+      - name: PRE
+        type: survey
+        title: Pretest
+        url: https://practice.dsc10.com/pretest/
       - name: DISC 2
         type: disc
         title: Arrays and DataFrames
@@ -52,7 +56,4 @@ days:
           - name: CIT 7.0-7.1
             url: https://inferentialthinking.com/chapters/07/Visualization.html
         keywords: .groupby, numerical vs. categorical, scatter plot, line plot, bar chart
-      - name: QUIZ 0
-        type: quiz
-        title: Research Assessment 1
 ---

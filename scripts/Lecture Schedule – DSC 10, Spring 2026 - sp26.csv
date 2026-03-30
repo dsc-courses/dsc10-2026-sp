@@ -6,7 +6,7 @@ Week,Title,Date,#,Lecture,Readings,Links,Keywords,Homework,Discussion,Lab,Quiz,S
 2,DataFrames and Visualization,Mon 4/6,4,Arrays and DataFrames,BPD 9,https://notes.dsc10.com/02-data_sets/accessing.html,"array methods, np.arange, .read_csv, .get, .assign, .sort_values, .iloc, .loc, index",,2. Arrays and DataFrames,0. Expressions and Data Types; Pre-test,,
 ,,Wed 4/8,5,Querying and Grouping,BPD 10-11,https://notes.dsc10.com/02-data_sets/querying.html,".set_index, Booleans, querying, .shape, &, |, .take, .groupby, aggregation",,,,,
 ,,Thu 4/9,,,,,,,,1. Arrays and DataFrames,,
-,,Fri 4/10,6,Grouping and Data Visualization,CIT 7.0-7.1,https://inferentialthinking.com/chapters/07/Visualization.html,".groupby, numerical vs. categorical, scatter plot, line plot, bar chart",,,,0. Research Assessment 1,
+,,Fri 4/10,6,Grouping and Data Visualization,CIT 7.0-7.1,https://inferentialthinking.com/chapters/07/Visualization.html,".groupby, numerical vs. categorical, scatter plot, line plot, bar chart",,,,,
 3,Histograms and Functions,Mon 4/13,7,Distributions and Histograms,CIT 7.2-7.3,https://inferentialthinking.com/chapters/07/2/Visualizing_Numerical_Distributions.html,"distributions, density histograms, binning, total area, overlaid plots","1. Basic Python, Arrays, and DataFrames","3. Querying, Grouping, and Plotting",,,
 ,,Wed 4/15,8,Functions and Applying,"BPD 6, 12","https://notes.dsc10.com/01-getting_started/functions-defining.html#example, https://notes.dsc10.com/02-data_sets/apply.html","functions, arguments, print vs. return, .apply, .reset_index",,,,1. Quiz 1 covers Lectures 1-6,
 ,,Thu 4/16,,,,,,,,2. Data Visualizations and Functions,,
