@@ -14,11 +14,11 @@ nav_order: 1
 {{ site.staffersnobio }}
 
 
-<!--{: .success }
->Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist. These are due very soon, on **Saturday, September 27th at 11:59PM**.-->
+{: .success }
+>Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist. These are due very soon, on **Thursday, April 2nd at 11:59PM**.
 
-{: .warning }
-This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Spring 2026.
+<!--{: .warning }
+This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Spring 2026.-->
 
 <!--{: .success }
 >The Final Exam is **this Saturday, June 7th from 11:30AM to 2:30PM in CENTER 101**.
