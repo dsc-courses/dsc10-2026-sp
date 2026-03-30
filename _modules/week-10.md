@@ -26,7 +26,7 @@ days:
     events:
       - name: REV
         type: lecture
-        title: <b>Review</b>
+        title: Review
       - name: PROJ
         type: proj
         title: Final Project
@@ -35,7 +35,7 @@ days:
     events:
       - name: REV
         type: lecture
-        title: <b>Review, Conclusion</b>
+        title: Review, Conclusion
   - date: 2026-6-6
     events:
       - name: EXAM

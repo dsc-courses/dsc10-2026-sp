@@ -161,7 +161,7 @@ days:"""
                 outstr += f"""
       - name: REV
         type: lecture
-        title: <b>{lecture}</b>"""
+        title: {lecture}"""
             else:
                 outstr += f"""
       - markdown_content: <b>{lecture}</b>"""

@@ -22,7 +22,7 @@ days:
     events:
       - name: REV
         type: lecture
-        title: <b>Review</b>
+        title: Review
       - name: SUR
         type: survey
         title: Mid-Quarter Survey
