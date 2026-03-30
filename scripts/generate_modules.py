@@ -116,15 +116,16 @@ days:"""
         discussion = day.Discussion
         quiz = day.Quiz
         survey = day.Survey
-
+ 
         date_formatted = date_conv(date)
-
+ 
         outstr = outstr.rstrip()
         outstr += f"""
   - date: {date_formatted}
     events:"""
-
-        # Lecture number
+ 
+        # --- Lectures first ---
+ 
         if pd.notna(lec_num) and lec_num != 0:
             outstr += f"""
       - name: LEC {int(lec_num)}
@@ -134,7 +135,7 @@ days:"""
         html:
         podcast:
         readings: """
-
+ 
             outstr = outstr.rstrip()
             read_str = "\n"
             if readings:
@@ -145,10 +146,46 @@ days:"""
                     read_str += f"""          - name: {readings_list[j]}\n"""
                     read_str += f"""            url: {links_list[j].strip('#')}\n"""
                 outstr += f"""{read_str}"""
-                
+ 
             if keywords:
                 outstr += f"""        keywords: {keywords}"""
-     
+ 
+        elif pd.isna(lec_num) and pd.notna(lecture) and lecture:
+            if lecture and "Exam" in str(lecture):
+                outstr += f"""
+      - name: EXAM
+        type: exam
+        title: <b>{lecture}</b>"""
+ 
+            elif lecture and "Review" in str(lecture):
+                outstr += f"""
+      - name: REV
+        type: lecture
+        title: <b>{lecture}</b>"""
+            else:
+                outstr += f"""
+      - markdown_content: <b>{lecture}</b>"""
+ 
+        # --- Discussions and quizzes second ---
+ 
+        if discussion:
+            disc_num, disc_name = discussion.split(". ")
+            outstr = outstr.rstrip()
+            outstr += f"""
+      - name: DISC {disc_num}
+        type: disc
+        title: {disc_name}
+        url: """
+ 
+        if quiz:
+            quiz_num, quiz_description = quiz.split(". ", 1)
+            outstr += f"""
+      - name: QUIZ {quiz_num}
+        type: quiz
+        title: {quiz_description}"""
+ 
+        # --- Assignments last ---
+ 
         if lab:
             lab_num, lab_name = lab.split(". ")
             outstr = outstr.rstrip()
@@ -157,27 +194,11 @@ days:"""
         type: lab
         title: {lab_name}
         url: """
-            
-        elif pd.isna(lec_num) and pd.notna(lecture) and lecture:
-            if lecture and "Exam" in str(lecture):
-                outstr += f"""
-      - name: EXAM
-          type: exam
-          title: <b>{lecture}</b>"""
-
-            elif lecture and "Review" in str(lecture):
-                outstr += f"""
-      - name: REV
-          type: lecture
-          title: <b>{lecture}</b>"""
-            else:
-                outstr += f"""
-      - markdown_content: <b>{lecture}</b>"""
-
+ 
         if homework:
             outstr = outstr.rstrip()
             if "Project" in homework:
-                outstr += f"""      
+                outstr += f"""
       - name: PROJ
         type: proj
         title: {homework.strip()}
@@ -189,16 +210,7 @@ days:"""
         type: hw
         title: {hw_name.strip()}
         url: """
-
-        if discussion:
-            disc_num, disc_name = discussion.split(". ")
-            outstr = outstr.rstrip()
-            outstr += f"""
-      - name: DISC {disc_num}
-        type: disc
-        title: {disc_name}
-        url: """
-            
+ 
         if survey:
             if '[' in survey and ']' in survey:
                 survey_name, survey_link = survey.split('](')
@@ -209,23 +221,16 @@ days:"""
         type: survey
         title: {survey_name}
         url: {survey_link}"""
-            else: 
+            else:
                 outstr += f"""
       - name: SUR
         type: survey
         title: {survey}
         url: """
-            
-        if quiz:
-            quiz_num, quiz_description = quiz.split(". ", 1)
-            outstr += f"""
-      - name: QUIZ {quiz_num}
-        type: quiz
-        title: {quiz_description}"""
-
+ 
     outstr = outstr.rstrip()
     outstr += "\n---"
-
+ 
     if write:
         os.makedirs(dest, exist_ok=True)
         f = open(dest + "/week-" + round_format(i) + ".md", "w")

@@ -13,14 +13,14 @@ days:
         readings:
           - name: CIT 13.0-13.2
             url: https://inferentialthinking.com/chapters/13/Estimation.html
-        keywords: inference, bootstrapping, resample, np.percentile, confidence interval      
-      - name: PROJ
-        type: proj
-        title: Midterm Project
-        url:
+        keywords: inference, bootstrapping, resample, np.percentile, confidence interval
       - name: DISC 6
         type: disc
         title: Sampling, Bootstrapping, and Confidence Intervals
+        url:
+      - name: PROJ
+        type: proj
+        title: Midterm Project
         url:
   - date: 2026-5-6
     events:

@@ -14,13 +14,13 @@ days:
           - name: CIT 7.2-7.3
             url: https://inferentialthinking.com/chapters/07/2/Visualizing_Numerical_Distributions.html
         keywords: distributions, density histograms, binning, total area, overlaid plots
-      - name: HW 1
-        type: hw
-        title: Basic Python, Arrays, and DataFrames
-        url:
       - name: DISC 3
         type: disc
         title: Querying, Grouping, and Plotting
+        url:
+      - name: HW 1
+        type: hw
+        title: Basic Python, Arrays, and DataFrames
         url:
   - date: 2026-4-15
     events:

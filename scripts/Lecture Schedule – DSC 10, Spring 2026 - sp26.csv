@@ -3,7 +3,7 @@ Week,Title,Date,#,Lecture,Readings,Links,Keywords,Homework,Discussion,Lab,Quiz,S
 ,,Wed 4/1,2,Expressions and Data Types,BPD 1-6,https://notes.dsc10.com/01-getting_started/tools.html,"Jupyter notebooks, expressions, variables, assignment, functions, int, float",,,,,
 ,,Thu 4/2,,,,,,,,,,[Welcome Survey](https://forms.gle/HE1a1V7rvu5BCuSZ7)
 ,,Fri 4/3,3,"Strings, Lists, and Arrays","BPD 7-8, CIT 14.1","https://notes.dsc10.com/02-data_sets/arrays.html, https://inferentialthinking.com/chapters/14/1/Properties_of_the_Mean.html#","string methods, mean, median, lists, arrays, array arithmetic",,,,,
-2,DataFrames and Visualization,Mon 4/6,4,Arrays and DataFrames,BPD 9,https://notes.dsc10.com/02-data_sets/accessing.html,"array methods, np.arange, .read_csv, .get, .assign, .sort_values, .iloc, .loc, index",,2. Arrays and DataFrames,0. Expressions and Data Types; Pre-test,,
+2,DataFrames and Visualization,Mon 4/6,4,Arrays and DataFrames,BPD 9,https://notes.dsc10.com/02-data_sets/accessing.html,"array methods, np.arange, .read_csv, .get, .assign, .sort_values, .iloc, .loc, index",,2. Arrays and DataFrames,0. Expressions and Data Types,,
 ,,Wed 4/8,5,Querying and Grouping,BPD 10-11,https://notes.dsc10.com/02-data_sets/querying.html,".set_index, Booleans, querying, .shape, &, |, .take, .groupby, aggregation",,,,,
 ,,Thu 4/9,,,,,,,,1. Arrays and DataFrames,,
 ,,Fri 4/10,6,Grouping and Data Visualization,CIT 7.0-7.1,https://inferentialthinking.com/chapters/07/Visualization.html,".groupby, numerical vs. categorical, scatter plot, line plot, bar chart",,,,,

@@ -21,8 +21,8 @@ days:
   - date: 2026-4-29
     events:
       - name: REV
-          type: lecture
-          title: <b>Review</b>
+        type: lecture
+        title: <b>Review</b>
       - name: SUR
         type: survey
         title: Mid-Quarter Survey
@@ -30,6 +30,6 @@ days:
   - date: 2026-5-1
     events:
       - name: EXAM
-          type: exam
-          title: <b>Midterm Exam covers Lectures 1-12</b>
+        type: exam
+        title: <b>Midterm Exam covers Lectures 1-12</b>
 ---

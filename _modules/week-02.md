@@ -14,18 +14,18 @@ days:
           - name: BPD 9
             url: https://notes.dsc10.com/02-data_sets/accessing.html
         keywords: array methods, np.arange, .read_csv, .get, .assign, .sort_values, .iloc, .loc, index
+      - name: DISC 2
+        type: disc
+        title: Arrays and DataFrames
+        url:
       - name: LAB 0
         type: lab
-        title: Expressions and Data Types; Pre-test
+        title: Expressions and Data Types
         url:
       - name: PRE
         type: survey
         title: Pretest
         url: https://practice.dsc10.com/pretest/
-      - name: DISC 2
-        type: disc
-        title: Arrays and DataFrames
-        url:
   - date: 2026-4-8
     events:
       - name: LEC 5

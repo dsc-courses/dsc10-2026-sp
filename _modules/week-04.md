@@ -14,13 +14,13 @@ days:
           - name: CIT 9.0-9.2
             url: https://inferentialthinking.com/chapters/09/Randomness.html
         keywords: in, not, and, or, if, else, elif, for-loops, np.append, accumulator pattern
-      - name: HW 2
-        type: hw
-        title: DataFrames, Data Visualization, and Functions
-        url:
       - name: DISC 4
         type: disc
         title: Functions, DataFrames, and Control Flow
+        url:
+      - name: HW 2
+        type: hw
+        title: DataFrames, Data Visualization, and Functions
         url:
   - date: 2026-4-22
     events:
