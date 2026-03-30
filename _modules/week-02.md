@@ -21,7 +21,7 @@ days:
       - name: LAB 0
         type: lab
         title: Expressions and Data Types
-        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2025-sp&subPath=labs/lab0/lab0.ipynb
+        url:
       - name: PRE
         type: survey
         title: Pretest
