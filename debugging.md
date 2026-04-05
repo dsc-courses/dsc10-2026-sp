@@ -13,8 +13,11 @@ nav_order: 5
 
 {: .no_toc .text-delta }
 
+<!-- prettier-ignore-start -->
+
 1. TOC
-   {:toc}
+{:toc}
+<!-- prettier-ignore-end -->
 
 [github]: {{ site.urls.github }}
 
