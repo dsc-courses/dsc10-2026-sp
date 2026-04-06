@@ -15,7 +15,7 @@ nav_order: 1
 
 
 {: .success }
->Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist. These are due very soon, on **Thursday, April 2nd at 11:59PM**.
+>Welcome to DSC 10! If you just joined the class, make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist within 24 hours of enrolling.
 
 <!--{: .warning }
 This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Spring 2026.-->

@@ -7,7 +7,7 @@ nav_order: 3
 
 # 📆 Calendar
 
-Janine's Friday morning office hours will be held in in <a href="https://map.concept3d.com/?id=1005#!m/761769?share">PODEM 1A19</a>, which is the same classroom as lecture. All other office hours will be held in Room 155 of the <a href="https://map.concept3d.com/?id=1005#!m/246301">HDSI building</a>. 
+Janine's morning office hours will be held in <a href="https://map.concept3d.com/?id=1005#!m/761769?share">PODEM 1A19</a>, which is the same classroom as lecture. All other office hours will be held in Room 155 of the <a href="https://map.concept3d.com/?id=1005#!m/246301">HDSI building</a>. 
 
 Many students come to office hours just to work on their assignments, even if they don't have specific questions. All are welcome and we hope to see you there!
 
