@@ -23,8 +23,8 @@ days:
       - name: LEC 2
         type: lecture
         title: Expressions and Data Types
-        url:
-        html:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=lectures/lec02/lec02-live.ipynb
+        html: resources/lectures/lec02/lec02.html
         podcast:
         readings:
           - name: BPD 1-6
@@ -45,8 +45,8 @@ days:
       - name: LEC 3
         type: lecture
         title: Strings, Lists, and Arrays
-        url:
-        html:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=lectures/lec03/lec03-live.ipynb
+        html: resources/lectures/lec03/lec03.html
         podcast:
         readings:
           - name: BPD 7-8
