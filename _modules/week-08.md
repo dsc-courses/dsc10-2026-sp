@@ -20,6 +20,10 @@ days:
         type: disc
         title: Hypothesis Testing and Permutation Testing
         url:
+      - name: HW 5
+        type: hw
+        title: The Normal Distribution and the Central Limit Theorem
+        url:
   - date: 2026-5-20
     events:
       - name: LEC 21

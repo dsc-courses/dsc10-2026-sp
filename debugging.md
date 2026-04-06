@@ -6,13 +6,18 @@ nav_order: 5
 ---
 
 # 🐞 Debugging
+
 {:.no_toc}
 
 ## Table of contents
+
 {: .no_toc .text-delta }
+
+<!-- prettier-ignore-start -->
 
 1. TOC
 {:toc}
+<!-- prettier-ignore-end -->
 
 [github]: {{ site.urls.github }}
 
@@ -24,7 +29,7 @@ If one particular cell seems to cause your kernel to die, your code is probably 
 
 ### How do I quickly run all the cells in a notebook?
 
-Go to the Cell menu in the top toolbar, then “Run All.” You can also select a certain cell and run all cells before this point, or run all cells after this point. You should run all the cells in your notebook before submitting to confirm that you pass all the tests.
+Go to the 'Run' tab in the top toolbar, then “Run All Cells.” You can also select a certain cell and "Run All Above Selected Cell", or "Run Selected Cell and All Below". You should "Restart Kernel and Run All Cells" in your notebook before submitting to confirm that you pass all the tests.
 
 ### Why does `grader.check_all()` fail, if all previous tests passed?
 
@@ -38,11 +43,11 @@ You probably ran your notebook out of order. Re-run all previous cells in order,
 
 This can happen if you're running your notebook's cells out-of-order. The autograder runs your notebook top-to-bottom. If you're defining a variable at the bottom of your notebook and using it at the top, the Gradescope autograder will fail because it doesn't recognize the variable when it encounters it.
 
-This is why we recommend running Kernel -> Restart and Run All: it "forgets" all of the variables and runs the notebook from top-to-bottom, just like the Gradescope autograder will. This will highlight any issues. Find the first cell that raises an error. Make sure that all of the variables used in that cell have been defined above that cell, and not below.
+This is why we recommend running Kernel -> "Restart Kernel and Run All Cells": it "forgets" all of the variables and runs the notebook from top-to-bottom, just like the Gradescope autograder will. This will highlight any issues. Find the first cell that raises an error. Make sure that all of the variables used in that cell have been defined above that cell, and not below.
 
 ### Why do I get an error saying grader is not defined?
 
-If it has been a while since you've worked on an assignment, the kernel will shut itself down to preserve memory. When this happens, all of your variables are forgotten, including the grader. That's OK: you'll just need to re-run all of the cells. The easiest way to do this is by using Kernel -> Restart and Run All.
+If it has been a while since you've worked on an assignment, the kernel will shut itself down to preserve memory. When this happens, all of your variables are forgotten, including the grader. That's OK: you'll just need to re-run all of the cells. The easiest way to do this is by using Kernel -> "Restart Kernel and Run All Cells".
 
 ### I’m positive I have the right answer, but the test fails. Is there a mistake in the test?
 
@@ -65,9 +70,9 @@ One option is to follow option 2 above, where you rename your assignment folder 
 The most common way this happens is if you (unknowingly) download your notebook as a `.json` file rather than a `.ipynb` file. This often happens by default when working on an iPad. One solution, which is also discussed starting at 20:05 in this [🎥 video](https://www.youtube.com/watch?v=Hq8VaNirDRQ&t=1205s), is to download your notebook as follows:
 
 1. Make sure you've restarted your kernel and run all cells in your notebook. Save your notebook.
-1. Click the "JupyterHub" button in the top left corner of the page.
-1. In the file explorer that appears, click `dsc10-2025-fa`, then navigate to the folder that contains the file you're trying to download. If you're working on Homework 3, for instance, you'll click `homeworks` and then `hw03`.
-1. Click the square checkbox to the left of your assignment notebook (e.g. `hw03.ipynb`). Click "Shutdown" at the top. Then, click the checkbox again and click "Download". This should download your notebook as a `.ipynb` file.
+1. Click the "Jupyter" button in the top left corner of the page.
+1. In the file explorer that appears, click `dsc10-2026-sp`, then navigate to the folder that contains the file you're trying to download. If you're working on Homework 3, for instance, you'll click `homeworks` and then `hw03`.
+1. Click the square checkbox to the left of your assignment notebook (e.g. `hw03.ipynb`). Click "Download". This should download your notebook as a `.ipynb` file.
 
 ## Specific Errors
 
@@ -93,14 +98,16 @@ Python keywords like `str` and `list` appear in green text, so be on the lookout
 
 This can happen if you click the name of a course other than DSC 10 when logging into DataHub. Here's how to "switch" your DataHub to DSC 10 mode:
 
-- Click "Control Panel" in the top right.
-- Click "Services", then click "manual-resetter".
-- Click "Reset" (if a pop-up box appears, click okay).
-- Log back into DataHub and it should allow you to select a course again – select DSC 10.
+- Click the "Jupyter" button in the top left corner
+- On the url, it should say something like 'https://datahub.ucsd.edu/user/{username}/tree' (where {username} is the start of your ucsd email, before "@ucsd.edu"). Switch the "tree" at the end of the url to "lab" ('https://datahub.ucsd.edu/user/{username}/lab'). The navigation should be on the left-hand side on this view.
+- Click "File" in the top left of the menu bar. Click "Hub Control Panel". This should open a new page with "Stop My Server" and "My Server".
+- Click "Stop My Server". Once it reloads, click "Start My Server".
+- Pick the right server for the DataHub (it should start with "DSC10" and be under the DSC 10 instructor's name). Select that server and click "Launch Environment".
+- Navigate back into your assignment either through the [DSC10 homepage](https://dsc10.com/) or using the navigation bar.
 
 ### Other errors
 
-It can be difficult to decipher the meaning of error messages in Python. [Here is a useful guide](https://swcarpentry.github.io/python-novice-inflammation/09-errors/index.html). You can also ask in office hours, or on Ed, provided you are not posting your code publicly or otherwise giving away the answer in your post. Understanding cryptic error messages is a skill that comes with experience.
+It can be difficult to decipher the meaning of error messages in Python. [Here is a useful guide](https://swcarpentry.github.io/python-novice-inflammation/09-errors.html). You can also ask in office hours, or on Campuswire, provided you are not posting your code publicly or otherwise giving away the answer in your post. Understanding cryptic error messages is a skill that comes with experience.
 
 ## DataHub
 
@@ -116,7 +123,7 @@ If you've already worked on an assignment and then start seeing this error, try 
 
 If all else fails, this issue usually resolves itself with time, so try again in a few hours.
 
-### When I click a link on the course website, I see a black screen with text and a red error bar. What should I do?
+### When I click a link on the course website, I see a black screen with text and a red error bar that says "Error: Command...". What should I do?
 
 This is usually what's called a "merge conflict", which means that DataHub wasn't able to combine the versions of the assignments we released with the versions you worked on. This should only happen in rare circumstances.
 
@@ -144,11 +151,11 @@ Log out of all Google accounts or open an incognito window. When prompted, enter
 
 ### How can Extension Students access DataHub?
 
-Extension students may receive separate accounts for the purpose of accessing DataHub. To look up your account information and reset any additional account passwords, visit [this website](https://sdacs.ucsd.edu/~icc/index.php) and enter your AX account in the username field and your UID in the Student ID field (e.g. "axNNNN", "cs120sp20aa", etc.)
+Extension students may receive separate accounts for the purpose of accessing DataHub. To look up your account information and reset any additional account passwords, visit [this website](https://support.ucsd.edu/its?id=kb_article_view&sysparm_article=KB0031945) and follow the instructions.
 
 ### My notebook won't load. Is DataHub down?
 
-Sometimes DataHub does have availability issues. Usually it is back up and running again within an hour. In other instances, there are some things you can do to get the notebook running again: Make sure your internet connection is working. If you can, restart your server by clicking the button at the top right labeled "Control Panel", then select "Stop My Server", followed by "Start My Server". If that doesn't work, try restarting your computer and using a different browser. Whenever you resume working on a notebook, run all cells you've previously completed. If your problem persists after trying all these steps, please notify us on Ed.
+Sometimes DataHub does have availability issues. Usually it is back up and running again within an hour. In other instances, there are some things you can do to get the notebook running again: Make sure your internet connection is working. If you can, restart your server by clicking the "Jupyter" button on the top left, renaming the url from "https://datahub.ucsd.edu/user/{username}/tree" to "https://datahub.ucsd.edu/user/{username}/lab", then selecting "File" -> "Hub Control Panel" -> "Stop My Server", followed by "Start My Server". If that doesn't work, try restarting your computer and using a different browser. Whenever you resume working on a notebook, run all cells you've previously completed. If your problem persists after trying all these steps, please notify us on Campuswire.
 
 ### What if I don't have access to DataHub and I still want to access DSC 10 materials?
 

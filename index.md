@@ -32,7 +32,19 @@ This site is **under construction**. Anything you read here is not finalized. Th
 >Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
 -->
 
-[Jump to the current week](/#week-1-python-basics){: .btn }
+<a id="jump-to-current-week" href="/#{{ site.modules.first.title | slugify }}" class="btn">Jump to the current week</a>
+<script>
+(function() {
+  var weeks = [{% for module in site.modules %}{"slug":"{{ module.title | slugify }}","start":"{{ module.days.first.date | date: '%Y-%m-%d' }}"}{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var target = weeks[0].slug;
+  for (var i = 0; i < weeks.length; i++) {
+    if (today >= new Date(weeks[i].start)) target = weeks[i].slug;
+  }
+  document.getElementById('jump-to-current-week').href = '/#' + target;
+})();
+</script>
 
 {% for module in site.modules %}
 {{ module }}

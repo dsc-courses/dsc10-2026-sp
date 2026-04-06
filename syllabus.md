@@ -73,8 +73,8 @@ You can attend any lecture section, but if space fills up, priority will be give
 
  There are two discussion sections:
 
-- Section A: MWF 3-3:50PM in [PODEM 1A20][classroom].
-- Section B: MWF 4-4:50PM in [PODEM 1A20][classroom].
+- Section A: Monday 3-3:50PM in [PODEM 1A20][classroom].
+- Section B: Monday 4-4:50PM in [PODEM 1A20][classroom].
 
 Discussions will start in Week 1 on Monday, March 30th. The first discussion includes some useful instruction and tips for using Jupyter notebooks and Datahub, the programming tools we'll be using in this course. It should be helpful to get you set up and comfortable with the technology you'll be using all quarter. 
 

@@ -55,8 +55,4 @@ days:
           - name: CIT 9.3-9.4
             url: https://inferentialthinking.com/chapters/09/3/Simulation.html
         keywords: np.random.choice, replacement, np.count_nonzero, coin flipping, Monty Hall
-      - name: HW 3
-        type: hw
-        title: DataFrames, Control Flow, and Probability
-        url:
 ---

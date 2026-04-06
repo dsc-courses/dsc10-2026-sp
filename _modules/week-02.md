@@ -21,7 +21,7 @@ days:
       - name: LAB 0
         type: lab
         title: Expressions and Data Types
-        url:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=labs/lab0/lab0.ipynb
       - name: PRE
         type: survey
         title: Pretest
@@ -43,7 +43,7 @@ days:
       - name: LAB 1
         type: lab
         title: Arrays and DataFrames
-        url:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=labs/lab1/lab1.ipynb
   - date: 2026-4-10
     events:
       - name: LEC 6

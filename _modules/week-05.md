@@ -18,6 +18,10 @@ days:
         type: disc
         title: Probability and Simulation
         url:
+      - name: HW 3
+        type: hw
+        title: DataFrames, Control Flow, and Probability
+        url:
   - date: 2026-4-29
     events:
       - name: REV
