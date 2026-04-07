@@ -39,8 +39,8 @@ This site is **under construction**. Anything you read here is not finalized. Th
   var today = new Date();
   today.setHours(0, 0, 0, 0);
   var target = weeks[0].slug;
-  for (var i = 0; i < weeks.length; i++) {
-    if (today >= new Date(weeks[i].start)) target = weeks[i].slug;
+  for (var i = 0; i !== weeks.length; i++) {
+    if (Math.max(today.valueOf(), new Date(weeks[i].start).valueOf()) === today.valueOf()) target = weeks[i].slug;
   }
   document.getElementById('jump-to-current-week').href = '/#' + target;
 })();
