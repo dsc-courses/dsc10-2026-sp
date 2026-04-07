@@ -111,6 +111,10 @@ It can be difficult to decipher the meaning of error messages in Python. [Here i
 
 ## DataHub
 
+### I accidentally closed the AI Tutor tab, how do I get it back?
+
+Click "View" at the top menu bar, click "Right Sidebar" at the bottom, click "Show".
+
 ### When I click a link on the course website, I see a black screen with text and a red error bar that says "Error: undefined." What should I do?
 
 <center><img src="../assets/images/error-undefined.png" width="80%" alt="error undefined example"></center>
