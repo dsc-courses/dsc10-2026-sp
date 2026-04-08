@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = (10, 5)
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 import pandas as pd
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
