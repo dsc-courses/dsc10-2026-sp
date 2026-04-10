@@ -49,7 +49,7 @@ days:
       - name: LEC 6
         type: lecture
         title: Grouping and Data Visualization
-        url:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=lectures/lec06/lec06-live.ipynb
         html: resources/lectures/lec06/lec06.html
         podcast:
         readings:
