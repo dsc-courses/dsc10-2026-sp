@@ -7533,7 +7533,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-6-%E2%80%93-Data-Visualization-%F0%9F%93%88">Lecture 6 – Data Visualization 📈<a class="anchor-link" href="#Lecture-6-%E2%80%93-Data-Visualization-%F0%9F%93%88">¶</a></h1><h2 id="DSC-10,-Winter-2026">DSC 10, Winter 2026<a class="anchor-link" href="#DSC-10,-Winter-2026">¶</a></h2>
+<h1 id="Lecture-6-%E2%80%93-Data-Visualization-%F0%9F%93%88">Lecture 6 – Data Visualization 📈<a class="anchor-link" href="#Lecture-6-%E2%80%93-Data-Visualization-%F0%9F%93%88">¶</a></h1><h2 id="DSC-10,-Spring-2026">DSC 10, Spring 2026<a class="anchor-link" href="#DSC-10,-Spring-2026">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7596,7 +7596,7 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Aside:-Keyboard-shortcuts">Aside: Keyboard shortcuts<a class="anchor-link" href="#Aside:-Keyboard-shortcuts">¶</a></h3><p>There are several keyboard shortcuts built into Jupyter Notebooks designed to help you save time. To see them, either click the keyboard button in the toolbar above or hit the H key on your keyboard (as long as you're not actively editing a cell).</p>
+<h3 id="%F0%9F%92%A1-Pro-Tip:-Using-keyboard-shortcuts">💡 Pro-Tip: Using keyboard shortcuts<a class="anchor-link" href="#%F0%9F%92%A1-Pro-Tip:-Using-keyboard-shortcuts">¶</a></h3><p>There are several keyboard shortcuts built into Jupyter Notebooks designed to help you save time. To see them, either click the keyboard button in the toolbar above or hit the H key on your keyboard (as long as you're not actively editing a cell).</p>
 <p>Particularly useful shortcuts:</p>
 <table>
 <thead>
@@ -7673,7 +7673,7 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id=".groupby-aggregates-rows"><code>.groupby</code> aggregates rows<a class="anchor-link" href="#.groupby-aggregates-rows">¶</a></h3><p><code>.groupby</code> aggregates (collects) all rows with the same value in a specified column (e.g. <code>'Region'</code>) into a single row in the resulting DataFrame, using an aggregation method (e.g. <code>.sum()</code>) to combine values from different rows with the same value in the specified column.</p>
+<h3 id=".groupby-aggregates-rows"><code>.groupby</code> aggregates rows<a class="anchor-link" href="#.groupby-aggregates-rows">¶</a></h3><p>In short, <code>.groupby</code> aggregates (collects) all rows with the same value in a specified column (e.g. <code>'Region'</code>) into a single row in the resulting DataFrame, combining the values from the different rows using an aggregation method (e.g. <code>.sum()</code>).</p>
 </div>
 </div>
 </div>
@@ -7698,8 +7698,7 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Using-.groupby-in-general">Using <code>.groupby</code> in general<a class="anchor-link" href="#Using-.groupby-in-general">¶</a></h3><p>In short, <code>.groupby</code> aggregates (collects) all rows with the same value in a specified column (e.g. <code>'Region'</code>) into a single row in the resulting DataFrame, using an aggregation method (e.g. <code>.sum()</code>) to combine values from different rows with the same value in the specified column.</p>
-<p>To use <code>.groupby</code>:</p>
+<h3 id="Using-.groupby-in-general">Using <code>.groupby</code> in general<a class="anchor-link" href="#Using-.groupby-in-general">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7711,12 +7710,12 @@ df.get(['size', 'longevity']).groupby('size').mean()
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol>
-<li><strong>Choose a column to group by and column(s) to aggregate with <code>.get()</code></strong>.<ul>
-<li><code>.get(['Region', 'Population', ...])</code> to select out the columns you want to group by and aggregate together.</li>
+<li><strong>Isolate the columns you'll need</strong>.<ul>
+<li>Use <code>.get([...])</code> to select the columns you'll need.</li>
 <li>Rule of thumb:<ul>
-<li>Choose one categorical column to group by (in this case, <code>Region</code>).</li>
-<li>Choose one or more numeric columns to aggregate (<code>Population</code>, <code>Land Area</code>, etc.)</li>
-<li>Don't include non-numeric columns to aggregate unless your aggregation method doesn't perform arithmetic (e.g. <code>.count()</code> is okay on string columns, but not <code>.mean()</code>).</li>
+<li>Choose a categorical column to group by (e.g. <code>Region</code>).</li>
+<li>Choose one or more columns to aggregate (e.g. <code>Population</code>, <code>Land Area</code>, etc.). Most commonly, these are numerical columns.</li>
+<li>The aggregation method should make sense for the data in the columns you want to aggregate  (e.g. <code>.mean()</code> works for <code>int</code> and <code>float</code> values, but not for strings).</li>
 </ul>
 </li>
 </ul>
@@ -7733,8 +7732,8 @@ df.get(['size', 'longevity']).groupby('size').mean()
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol start="2">
-<li><strong>Make groups with <code>.groupby()</code></strong>.<ul>
-<li><code>.groupby(column_name)</code> will gather rows which have the same value in the specified column (<code>column_name</code>).</li>
+<li><strong>Make groups with <code>.groupby(categorical_column)</code></strong>.<ul>
+<li><code>.groupby(categorical_column)</code> will gather rows which have the same value in the specified column.</li>
 <li>In the resulting DataFrame, there will be one row for every unique value in that column.</li>
 </ul>
 </li>
@@ -7750,13 +7749,16 @@ df.get(['size', 'longevity']).groupby('size').mean()
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol start="3">
-<li><strong>Call an aggregation method</strong>.<ul>
-<li>The aggregation method will be applied <strong>within</strong> each group.</li>
+<li><strong>Follow up with an aggregation method</strong>.<ul>
+<li>The aggregation method is applied <strong>within</strong> each group.</li>
 <li>The aggregation method is applied individually to each column.<ul>
-<li>If it doesn't make sense to use the aggregation method on a column, you will get an error or nonsensical result.</li>
+<li>If it doesn't make sense to use the aggregation method on a column, you will get an error or nonsensical result. This is why we use <code>.get</code> first, so we only aggregate the columns we want to!</li>
 </ul>
 </li>
-<li>Common aggregation methods include <code>.count()</code>, <code>.sum()</code>, <code>.mean()</code>, <code>.median()</code>, <code>.max()</code>, and <code>.min()</code>.</li>
+<li>Aggregation methods you should know: <code>.count()</code>, <code>.sum()</code>, <code>.mean()</code>, <code>.median()</code>, <code>.max()</code>, and <code>.min()</code>.<ul>
+<li>🚨 <strong>Note</strong>: In this class, <strong>avoid</strong> using <code>.size()</code> which is similar but not the same as <code>.count()</code>.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
@@ -7791,7 +7793,35 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Adjusting-columns">Adjusting columns<a class="anchor-link" href="#Adjusting-columns">¶</a></h2>
+<h3 id="The-role-of-.get">The role of <code>.get</code><a class="anchor-link" href="#The-role-of-.get">¶</a></h3><p>Observe what happens if we don't start with <code>.get</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Region'</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Region'</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7802,7 +7832,59 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id=".count()"><code>.count()</code><a class="anchor-link" href="#.count()">¶</a></h3><p>Notice the column names don't make sense after grouping with the <code>.count()</code> aggregation method.</p>
+<h3 id="Observations-on-grouping">Observations on grouping<a class="anchor-link" href="#Observations-on-grouping">¶</a></h3><ol>
+<li>After grouping, the index changes. The new row labels are the <em>group labels</em> (i.e., the unique values in the column that we grouped on), sorted in ascending order.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>💡 <strong>Pro-Tip:</strong> look for keywords "per," "for each," and "indexed by" when solving problems.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol start="2">
+<li>The aggregation method is applied separately to each column. If it does not make sense to apply the aggregation method to a certain column, you will get an error or a nonsensical result.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol start="3">
+<li>Since the aggregation method is applied to each column <strong>separately</strong>, the rows of the resulting DataFrame need to be interpreted with care.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol start="4">
+<li>The column names don't make sense after grouping with the <code>.count()</code> aggregation method.</li>
+</ol>
 </div>
 </div>
 </div>
@@ -7815,6 +7897,42 @@ df.get(['size', 'longevity']).groupby('size').mean()
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">states</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Region'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Dropping,-renaming,-and-reordering-columns">Dropping, renaming, and reordering columns<a class="anchor-link" href="#Dropping,-renaming,-and-reordering-columns">¶</a></h3><p>Consider dropping unneeded columns and renaming columns as follows:</p>
+<ol>
+<li>Use <code>.assign</code> to create a new column containing the same values as the old column(s).</li>
+<li>Use <code>.drop(columns=list_of_column_labels)</code> to drop the old column(s).<ul>
+<li>Alternatively, use <code>.get(list_of_column_labels)</code> to keep only the columns in the given list. The columns will appear in the order you specify, so this is also useful for reordering columns!</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">states_by_region</span> <span class="o">=</span> <span class="n">states</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Region'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">states_by_region</span> <span class="o">=</span> <span class="n">states_by_region</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span>
+                    <span class="n">States</span><span class="o">=</span><span class="n">states_by_region</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'Capital City'</span><span class="p">)</span>
+                    <span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">([</span><span class="s1">'States'</span><span class="p">])</span>
+<span class="n">states_by_region</span>
 </pre></div>
 </div>
 </div>
@@ -8482,31 +8600,6 @@ df.get(['size', 'longevity']).groupby('size').mean()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Extra-video-on-line-plots">Extra video on line plots<a class="anchor-link" href="#Extra-video-on-line-plots">¶</a></h3><p>If you're curious how line plots work under the hood, watch <a href="https://www.youtube.com/watch?v=glzZ04D1kDg">this video</a> we made a few quarters ago.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">'glzZ04D1kDg'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Bar-charts-%F0%9F%93%8A">Bar charts 📊<a class="anchor-link" href="#Bar-charts-%F0%9F%93%8A">¶</a></h2>
 </div>
 </div>
@@ -8748,15 +8841,7 @@ df.get(['size', 'longevity']).groupby('size').mean()
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">bars</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">get</span><span class="p">([</span><span class="s1">'Magnitude'</span><span class="p">,</span> <span class="s1">'Radius'</span><span class="p">])</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'barh'</span><span class="p">);</span>
-
-<span class="c1"># Don't worry about understanding this code, we're using it to draw hatch marks</span>
-<span class="c1"># on the Magnitude bars which is generally good practice for plots to be </span>
-<span class="c1"># readable in grayscale.</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">patch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">bars</span><span class="o">.</span><span class="n">patches</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">:</span>
-        <span class="n">patch</span><span class="o">.</span><span class="n">set_hatch</span><span class="p">(</span><span class="s1">'//'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">types</span><span class="o">.</span><span class="n">get</span><span class="p">([</span><span class="s1">'Magnitude'</span><span class="p">,</span> <span class="s1">'Radius'</span><span class="p">])</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'barh'</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>

@@ -50,7 +50,7 @@ days:
         type: lecture
         title: Grouping and Data Visualization
         url:
-        html:
+        html: resources/lectures/lec06/lec06.html
         podcast:
         readings:
           - name: CIT 7.0-7.1
