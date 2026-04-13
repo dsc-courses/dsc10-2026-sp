@@ -19,7 +19,7 @@ tagline: Principles of Data Science
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://dsc10.com' # the base hostname & protocol for your site, e.g. http://example.com
 author: DSC 10 Instructors and Course Staff
-exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'vendor']
 
 # reference these in the site using site.urls, e.g.:
 #

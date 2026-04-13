@@ -17,7 +17,7 @@ days:
       - name: DISC 3
         type: disc
         title: Querying, Grouping, and Plotting
-        url:
+        url: https://practice.dsc10.com/disc03/index.html
       - name: HW 1
         type: hw
         title: Basic Python, Arrays, and DataFrames
