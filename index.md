@@ -14,8 +14,9 @@ nav_order: 1
 {{ site.staffersnobio }}
 
 
-{: .success }
->Welcome to DSC 10! If you just joined the class, make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist within 24 hours of enrolling.
+<!--{: .success }
+>Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc10.com/syllabus/#-getting-started) checklist.
+-->
 
 <!--{: .warning }
 This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Spring 2026.-->
@@ -26,11 +27,11 @@ This site is **under construction**. Anything you read here is not finalized. Th
 >Earn 1 participation point by filling out both [SETs](https://academicaffairs.ucsd.edu/Modules/Evals/) and the internal [End-of-Quarter Survey](https://forms.gle/hWqgRBp4B45LDMLW9) before Saturday, June 7th at 8AM.
 -->
 
-<!--{: .success }
+{: .success }
 >**Tip**: When working on assignments, use Ctrl+F on this page to search for a keyword and quickly find the relevant lecture. Click the "✏️ write" button to open a static version of the lecture for reference, which is much faster than loading it on DataHub.
 >
 >Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
--->
+
 
 <a id="jump-to-current-week" href="/#{{ site.modules.first.title | slugify }}" class="btn">Jump to the current week</a>
 <script>
