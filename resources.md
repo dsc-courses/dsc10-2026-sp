@@ -55,6 +55,12 @@ These are some additional resources to complement our lecture and assignments on
 - [Theory Meets Data, Chapters 1 and 2](http://stat88.org/textbook/content/Chapter_01/00_The_Basics.html)
 - [Khan Academy's unit on Probability](https://www.khanacademy.org/math/probability/xa88397b6:probability)
 
+### Density Histogram Visualization
+
+Density histogrmas can be tricky to understand. This article visually explains the motivation behind density histograms. 
+
+- [Density histogram visualization](https://tinlizzie.org/histograms/)
+
 ### Permutation Testing Visualization
 
 This article and visualization intuitively decribes permutation testing. It's very helpful for thinking about how permutation testing works and why it is useful.
