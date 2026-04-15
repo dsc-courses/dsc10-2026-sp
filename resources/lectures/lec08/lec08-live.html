@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-8-%E2%80%93-Functions-and-Applying">Lecture 8 – Functions and Applying<a class="anchor-link" href="#Lecture-8-%E2%80%93-Functions-and-Applying">¶</a></h1><h2 id="DSC-10,-Winter-2026">DSC 10, Winter 2026<a class="anchor-link" href="#DSC-10,-Winter-2026">¶</a></h2>
+<h1 id="Lecture-8-%E2%80%93-Functions-and-Applying">Lecture 8 – Functions and Applying<a class="anchor-link" href="#Lecture-8-%E2%80%93-Functions-and-Applying">¶</a></h1><h2 id="DSC-10,-Spring-2026">DSC 10, Spring 2026<a class="anchor-link" href="#DSC-10,-Spring-2026">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7544,6 +7544,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Agenda">Agenda<a class="anchor-link" href="#Agenda">¶</a></h3><ul>
+<li>Histogram question.</li>
 <li>Functions.</li>
 <li>Applying functions to DataFrames.<ul>
 <li>Example: Student names.</li>
@@ -7551,6 +7552,76 @@ a.anchor-link {
 </li>
 </ul>
 <p><em><strong>Reminder:</strong></em> Use the <a href="https://dsc-courses.github.io/bpd-reference/docs/documentation/intro/">DSC 10 Reference Sheet</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Histogram-question">Histogram question<a class="anchor-link" href="#Histogram-question">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Concept-Check-%E2%9C%85-%E2%80%93-Answer-at-cc.dsc10.com">Concept Check ✅ – Answer at <a href="http://cc.dsc10.com">cc.dsc10.com</a><a class="anchor-link" href="#Concept-Check-%E2%9C%85-%E2%80%93-Answer-at-cc.dsc10.com">¶</a></h3><p>Suppose we created a density histogram of people's shoe sizes. 👟 Below are the bins we chose along with their heights.</p>
+<table>
+<thead>
+<tr>
+<th>Bin</th>
+<th>Height of Bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[3, 7)</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>[7, 10)</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>[10, 12)</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>[12, 16]</td>
+<td>$X$</td>
+</tr>
+</tbody>
+</table>
+<p>What should the value of $X$ be so that this is a valid histogram?</p>
+<p>A. 0.02             
+B. 0.05             
+C. 0.2             
+D. 0.5             
+E. 0.7             </p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<details>
+<summary>✅ Click <b>here</b> to see an explanation after you've answered.</summary>
+<p>From the provided bins, we can calculate the bin widths, and then multiply each bin's width by its height to find its area.
+The bin $[3, 7)$ has a width of $7-3=4$ and a height of $0.05$, so its area is $4*0.05 = 0.2$. Similarly, the bin $[7, 10)$ has an area of $3*0.1 = 0.3$ and the bin $[10, 12)$ has an area of $2*0.15 = 0.3$.</p>
+<p>Adding these up, the total area of the first three bins is $0.2+0.3+0.3=0.8$, and since the total area of all bins in a histogram is always $1$, the fourth bin must have an area of $0.2$. This bin has a width of $4$, so its height must be $0.05$ to make its area $0.2$.</p>
+</details>
 </div>
 </div>
 </div>
@@ -7592,9 +7663,9 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">¶</a></h3><ul>
-<li>In Homework 1, you made an array containing all the multiples of 10, in ascending order, that appear on the multiplication table below.<center>
+<li><strong>Question</strong>: Create an array containing all the multiples of 10, in ascending order, that appear on the multiplication table below.<center>
 <br/>
-<img alt="No description has been provided for this image" src="images/mult.jpg" width="600"/>
+<img alt="No description has been provided for this image" src="images/mult.jpg" width="400"/>
 </center>
 </li>
 </ul>
@@ -7609,7 +7680,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">multiples_of_10</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">multiples_of_10</span> <span class="o">=</span> <span class="o">...</span>
 <span class="n">multiples_of_10</span>
 </pre></div>
 </div>
@@ -7624,7 +7695,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><strong>Question</strong>: How would you make an array containing all the multiples of 8, in increasing order, that appear on the multiplication table?</li>
+<li><strong>Question</strong>: Create an array containing all the multiples of 8, in increasing order, that appear on the multiplication table.</li>
 </ul>
 </div>
 </div>
@@ -7637,7 +7708,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">multiples_of_8</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="o">*</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">multiples_of_8</span> <span class="o">=</span> <span class="o">...</span>
 <span class="n">multiples_of_8</span>
 </pre></div>
 </div>
@@ -8927,7 +8998,7 @@ shared_names.get('name').sum() / roster.shape[0]
 <h3 id="Example:-Shared-first-names-and-sections">Example: Shared first names and sections<a class="anchor-link" href="#Example:-Shared-first-names-and-sections">¶</a></h3><ul>
 <li>Suppose you're one of the students who has a first name that is shared with at least one other student.</li>
 <li>Let's try and determine whether someone <strong>in your lecture section</strong> shares the same first name as you.<ul>
-<li>For example, maybe <code>'Jayden Lcaert'</code> wants to see if there's another <code>'Jayden'</code> in their section.</li>
+<li>For example, maybe <code>'Aiden Pvtkkz'</code> wants to see if there's another <code>'Aiden'</code> in their section.</li>
 </ul>
 </li>
 </ul>
@@ -8943,8 +9014,8 @@ shared_names.get('name').sum() / roster.shape[0]
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Strategy:</p>
 <ol>
-<li>Which section is <code>'Jayden Lcaert'</code> in?</li>
-<li>How many people in that section have a first name of <code>'Jayden'</code>?</li>
+<li>Which section is <code>'Aiden Pvtkkz'</code> in?</li>
+<li>How many people in that section have a first name of <code>'Aiden'</code>?</li>
 </ol>
 </div>
 </div>
@@ -8971,7 +9042,7 @@ shared_names.get('name').sum() / roster.shape[0]
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">which_section</span> <span class="o">=</span> <span class="n">roster</span><span class="p">[</span><span class="n">roster</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'Jayden Lcaert'</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'section'</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">which_section</span> <span class="o">=</span> <span class="n">roster</span><span class="p">[</span><span class="n">roster</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'Aiden Pvtkkz'</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'section'</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">which_section</span>
 </pre></div>
 </div>
@@ -8986,7 +9057,7 @@ shared_names.get('name').sum() / roster.shape[0]
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">first_cond</span> <span class="o">=</span> <span class="n">roster</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'first'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'Jayden'</span> <span class="c1"># A Boolean Series!</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">first_cond</span> <span class="o">=</span> <span class="n">roster</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'first'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'Aiden'</span> <span class="c1"># A Boolean Series!</span>
 <span class="n">section_cond</span> <span class="o">=</span> <span class="n">roster</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'section'</span><span class="p">)</span> <span class="o">==</span> <span class="n">which_section</span> <span class="c1"># A Boolean Series!</span>
 <span class="n">how_many</span> <span class="o">=</span> <span class="n">roster</span><span class="p">[</span><span class="n">first_cond</span> <span class="o">&amp;</span> <span class="n">section_cond</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">how_many</span>
@@ -9042,7 +9113,7 @@ shared_names.get('name').sum() / roster.shape[0]
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">shared_first_and_section</span><span class="p">(</span><span class="s1">'Jayden Lcaert'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">shared_first_and_section</span><span class="p">(</span><span class="s1">'Aiden Pvtkkz'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
