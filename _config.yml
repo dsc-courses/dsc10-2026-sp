@@ -40,7 +40,7 @@ urls:
   classroom: &classroom 'https://map.concept3d.com/?id=1005#!m/761769?share'
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 color_scheme: bluecsd
 search_enabled: true
 heading_anchors: true
