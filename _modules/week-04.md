@@ -36,7 +36,7 @@ days:
         keywords: event, conditional prob., multiplication and addition rules, independence
       - name: QUIZ 2
         type: quiz
-        title: Quiz 2 covers Lectures 7-11
+        title: Quiz 2 covers Lectures 7-10
   - date: 2026-4-23
     events:
       - name: LAB 3
