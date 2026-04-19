@@ -17,7 +17,7 @@ days:
       - name: DISC 4
         type: disc
         title: Functions, DataFrames, and Control Flow
-        url:
+        url: https://practice.dsc10.com/disc04/index.html
       - name: HW 2
         type: hw
         title: DataFrames, Data Visualization, and Functions
