@@ -82,15 +82,15 @@
     +.module-event {
       padding-top: 0;
     }
-    .label-lecture { background-color: #ECEBED; text-align: center; border-radius: 6px; width: 60px; }
-    .label-disc { background-color: #BEDCFE; text-align: center; border-radius: 6px; width: 60px; }
-    .label-hw { background-color: #FFA3A4; text-align: center; border-radius: 6px; width: 60px; }
-    .label-proj { background-color: #DFB9DF; text-align: center; border-radius: 6px; width: 60px; }
-    .label-exam { background-color: #000000; text-align: center; border-radius: 6px; width: 60px; }
-    .label-lab { background-color: #FFDC8F; text-align: center; border-radius: 6px; width: 60px; }
-    .label-survey { background-color: #ADDFAF; text-align: center; border-radius: 6px; width: 60px; }
-    .label-quiz { background-color: #6E0D25; text-align: center; border-radius: 6px; width: 60px; }
-    .label-practice { background-color: #ADDFAF; text-align: center; border-radius: 6px; width: 60px; }
+    .label-lecture { background-color: #ECEBED; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
+    .label-disc { background-color: #BEDCFE; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
+    .label-hw { background-color: #FFA3A4; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
+    .label-proj { background-color: #DFB9DF; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
+    .label-exam { background-color: #000000; color: #FFFFFF; text-align: center; border-radius: 6px; width: 60px; }
+    .label-lab { background-color: #FFDC8F; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
+    .label-survey { background-color: #ADDFAF; color: #3D3D3D;text-align: center; border-radius: 6px; width: 60px; }
+    .label-quiz { background-color: #AA1155; color: #FFFFFF; text-align: center; border-radius: 6px; width: 60px; }
+    .label-practice { background-color: #ADDFAF; color: #3D3D3D; text-align: center; border-radius: 6px; width: 60px; }
 
     // .label-vit { background-color: #c1443c; text-align: center; border-radius: 9px; }
     // .label-live { background-color: #63c082; text-align: center; border-radius: 9px; }
