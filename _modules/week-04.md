@@ -17,7 +17,7 @@ days:
       - name: DISC 4
         type: disc
         title: Functions, DataFrames, and Control Flow
-        url:
+        url: https://practice.dsc10.com/disc04/index.html
       - name: HW 2
         type: hw
         title: DataFrames, Data Visualization, and Functions
@@ -36,7 +36,7 @@ days:
         keywords: event, conditional prob., multiplication and addition rules, independence
       - name: QUIZ 2
         type: quiz
-        title: Quiz 2 covers Lectures 7-11
+        title: Quiz 2 covers Lectures 7-10
   - date: 2026-4-23
     events:
       - name: LAB 3
