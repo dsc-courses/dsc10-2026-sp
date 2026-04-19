@@ -61,7 +61,7 @@
         width: 82%;
       }
 
-      +p {
+      + p {
         width: auto;
       }
     }
@@ -74,32 +74,30 @@
   .module-day {
     grid-column-start: 1;
   }
-
+  /* prettier-ignore */
   .module-event {
     grid-column-start: 2;
 
     +.module-event {
       padding-top: 0;
     }
-
     .label-lecture { background-color: #ECEBED; text-align: center; border-radius: 6px; width: 60px; }
-    .label-disc { background-color: #779ECC; text-align: center; border-radius: 6px; width: 60px; }
-    .label-hw { background-color: #E94C4B; text-align: center; border-radius: 6px; width: 60px; }
-    .label-proj { background-color: #FF8144; text-align: center; border-radius: 6px; width: 60px; }
+    .label-disc { background-color: #255693; text-align: center; border-radius: 6px; width: 60px; }
+    .label-hw { background-color: #9E2A2B; text-align: center; border-radius: 6px; width: 60px; }
+    .label-proj { background-color: #5A3A31; text-align: center; border-radius: 6px; width: 60px; }
     .label-exam { background-color: #000000; text-align: center; border-radius: 6px; width: 60px; }
-    .label-lab { background-color: #F2C76E; text-align: center; border-radius: 6px; width: 60px; }
-    .label-survey { background-color: #15c791; text-align: center; border-radius: 6px; width: 60px; }
-    .label-quiz { background-color: #7b40c7; text-align: center; border-radius: 6px; width: 60px; }
-    .label-practice { background-color: #ff9999; text-align: center; border-radius: 6px; width: 60px; }
+    .label-lab { background-color: #F0A202; text-align: center; border-radius: 6px; width: 60px; }
+    .label-survey { background-color: #244F26; text-align: center; border-radius: 6px; width: 60px; }
+    .label-quiz { background-color: #820263; text-align: center; border-radius: 6px; width: 60px; }
+    .label-practice { background-color: #244F26; text-align: center; border-radius: 6px; width: 60px; }
 
     // .label-vit { background-color: #c1443c; text-align: center; border-radius: 9px; }
     // .label-live { background-color: #63c082; text-align: center; border-radius: 9px; }
     // .label-ghost { background-color: #ffffff; width: 30px; text-align: center; border-radius: 9px; }
-
   }
-
 }
 
-.text-grey-dk-100, .label-lecture {
-    color: #5c5962 !important;
+.text-grey-dk-100,
+.label-lecture {
+  color: #5c5962 !important;
 }
