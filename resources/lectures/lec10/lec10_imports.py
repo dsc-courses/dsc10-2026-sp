@@ -27,7 +27,7 @@ plt.rcParams.update({
     'legend.title_fontsize': 12,
 })
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
