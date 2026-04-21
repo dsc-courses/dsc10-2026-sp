@@ -21,7 +21,7 @@ days:
       - name: HW 3
         type: hw
         title: DataFrames, Control Flow, and Probability
-        url:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=homeworks/hw3/hw3.ipynb
   - date: 2026-4-29
     events:
       - name: REV
