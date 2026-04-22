@@ -4,7 +4,7 @@
   <img class="staffer-image" src="{{ page.photo | relative_url }}" alt="">
   {% endif %}
   <div>
-    <h3 class="staffer-name">
+    <h2 class="staffer-name" style="font-size: 20px">
       {% if page.website %}
       <a href="{{ page.website }}">{{ page.name }}</a>
       {% else %}
@@ -13,7 +13,7 @@
       {% if page.pronouns %}
       <div class="staffer-pronouns"><b>{{ page.pronouns }}</b></div>
       {% endif %}
-    </h3>
+    </h2>
     <p>
     {% if page.email %}
     <a href="mailto:{{ page.email }}">{{ page.email }}</a>

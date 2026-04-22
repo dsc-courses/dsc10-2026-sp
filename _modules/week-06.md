@@ -18,6 +18,8 @@ days:
         type: disc
         title: Sampling, Bootstrapping, and Confidence Intervals
         url:
+  - date: 2026-5-5
+    events:
       - name: PROJ
         type: proj
         title: Midterm Project
