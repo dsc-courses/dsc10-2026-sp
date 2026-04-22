@@ -7,11 +7,14 @@ nav_order: 2
 ---
 
 # 📖 Syllabus
+
 {:.no_toc}
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
+<!-- prettier-ignore -->
 1. TOC
 {:toc}
 
@@ -27,7 +30,6 @@ nav_order: 2
 [welcome]: {{ site.urls.welcome}}
 [pretest]: {{site.urls.pretest}}
 [classroom]: {{site.urls.classroom}}
-
 
 ## 🧐 About
 
@@ -71,31 +73,31 @@ You can attend any lecture section, but if space fills up, priority will be give
 
 ### Discussion
 
- There are two discussion sections:
+There are two discussion sections:
 
 - Section A: Monday 3-3:50PM in [PODEM 1A20][classroom].
 - Section B: Monday 4-4:50PM in [PODEM 1A20][classroom].
 
-Discussions will start in Week 1 on Monday, March 30th. The first discussion includes some useful instruction and tips for using Jupyter notebooks and Datahub, the programming tools we'll be using in this course. It should be helpful to get you set up and comfortable with the technology you'll be using all quarter. 
+Discussions will start in Week 1 on Monday, March 30th. The first discussion includes some useful instruction and tips for using Jupyter notebooks and Datahub, the programming tools we'll be using in this course. It should be helpful to get you set up and comfortable with the technology you'll be using all quarter.
 
 Subsequent discussion sections will be focused on quiz and exam preparation. Students will work through problems from past DSC 10 quizzes and exams and be able to get help from course staff. Attending discussion and working through practice problems gives you direct experience with the types of questions you will see on quizzes and exams, which are typically the hardest parts of the course.
 
-**Discussion sections will not be podcasted.** The purpose of discussion is to give you hands-on problem-solving experience, so you really need to attend and participate to reap the benefits. 
+**Discussion sections will not be podcasted.** The purpose of discussion is to give you hands-on problem-solving experience, so you really need to attend and participate to reap the benefits.
 
 ### Quiz Sessions
 
-On four Wednesdays throughout the quarter, we will have short 20-minute quizzes. Quizzes will be held in-person during the time reserved for this class in the schedule of classes. 
+On four Wednesdays throughout the quarter, we will have short 20-minute quizzes. Quizzes will be held in-person during the time reserved for this class in the schedule of classes.
 
 Your quiz time is determined by your enrolled lecture section and the first letter of your last name:
 
-- Quiz Session 1, Wednesday 3-3:20PM in [PODEM 1A20][classroom]: 
-    - Section A, last name A-L
-- Quiz Session 2, Wednesday 3:30-3:50PM in [PODEM 1A20][classroom]: 
-    - Section A, last name M-Z
-- Quiz Session 3, Wednesday 4-4:20PM in [PODEM 1A20][classroom]: 
-    - Section B, last name A-L
-- Quiz Session 4, Wednesday 4:30-4:50PM in [PODEM 1A20][classroom]: 
-    - Section B, last name M-Z
+- Quiz Session 1, Wednesday 3-3:20PM in [PODEM 1A20][classroom]:
+  - Section A, last name A-L
+- Quiz Session 2, Wednesday 3:30-3:50PM in [PODEM 1A20][classroom]:
+  - Section A, last name M-Z
+- Quiz Session 3, Wednesday 4-4:20PM in [PODEM 1A20][classroom]:
+  - Section B, last name A-L
+- Quiz Session 4, Wednesday 4:30-4:50PM in [PODEM 1A20][classroom]:
+  - Section B, last name M-Z
 
 If you have a conflict with your assigned quiz session, you can let us know on the [Welcome Survey][welcome] and we will do our best to accommodate you. You must be able to attend at least one of the quiz sessions in order to take this class.
 
@@ -213,7 +215,7 @@ can benefit from the interaction. You can also post anonymously if you prefer.
 Course staff will regularly check Campuswire and try to answer any questions
 that you have. You’re also encouraged to answer a question asked by another
 student if you feel that you know the answer – this is a great way to
-strengthen your understanding of the material. 
+strengthen your understanding of the material.
 
 {: .note }
 Please use Campuswire **instead of email**, as this helps us keep all course-related
@@ -439,8 +441,8 @@ schedule. Please refer to the [homepage of this website](..) for the most up-to-
 
 | | **Monday** | **Tuesday** | **Wednesday** | **Thursday** | **Friday** |
 | **morning** | Lecture | | Lecture | | Lecture |
-| **afternoon** | Discussion | | <b style="color:red">Quiz</b> | | |
-| **evening** | <b style="color:red">Homework due</b> | | | <b style="color:red">Lab due</b> | |
+| **afternoon** | Discussion | | <b style="color:#B30014">Quiz</b> | | |
+| **evening** | <b style="color:#B30014">Homework due</b> | | | <b style="color:#B30014">Lab due</b> | |
 
 ---
 
@@ -479,7 +481,7 @@ regardless of the number of points they are graded out of.
 ### Regrade Requests
 
 If you'd like to request a regrade on any assignment, you must do so within one
-week of the assignment being graded. 
+week of the assignment being graded.
 If you think there is a problem with how a manually-graded question was graded, submit a regrade request through Gradescope. If you think there is a problem with the autograder, please make a private post on Campuswire explaining your concern.
 
 ### Letter Grades and Incompletes
@@ -589,7 +591,7 @@ Generative Artificial Intelligence (GenAI) describes tools, such as [ChatGPT](ht
 
 Our course policy on the use of GenAI tools for coursework is simple: you may use these tools to build an understanding of course material and to assist you on assignments, keeping in mind that no tool is a substitute for a strong understanding of course concepts.
 
-Be mindful of how you are using GenAI tools. These tools can be very useful to help you preview material before lecture, summarize material after lecture, explain concepts you didn’t understand, and debug your implementation in code. “Explain it like I’m five” can be a helpful prompt to give you a basic understanding of new concepts before being exposed to them in lecture. "Why doesn't this code run?" can be a quick way to find errors with the code you're writing. Consolidating your knowledge after learning something new and relating it to other things you know is important for learning and retention. 
+Be mindful of how you are using GenAI tools. These tools can be very useful to help you preview material before lecture, summarize material after lecture, explain concepts you didn’t understand, and debug your implementation in code. “Explain it like I’m five” can be a helpful prompt to give you a basic understanding of new concepts before being exposed to them in lecture. "Why doesn't this code run?" can be a quick way to find errors with the code you're writing. Consolidating your knowledge after learning something new and relating it to other things you know is important for learning and retention.
 Unfortunately, GenAI tools are not always a reliable source of quality information, so it's important to verify the information you obtain from such tools. For example, we asked ChatGPT to tell us about the Central Limit Theorem, an idea we will learn about towards the end of the quarter. The answer we get back is actually quite <b><span style="color:green">good</span></b>.
 
 <center>
