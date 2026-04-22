@@ -84,6 +84,20 @@
             <button type="button" class="btn btn-info">🕐 1PM</button>
           </a>
         </small>
+        {%- endif -%} {%- if event['10am'] -%}
+        <small>
+          &nbsp;&nbsp;
+          <a href="{{ event['10am'] }}">
+            <button type="button" class="btn btn-info">🕙 10AM</button>
+          </a>
+        </small>
+        {%- endif -%} {%- if event['11am'] -%}
+        <small>
+          &nbsp;&nbsp;
+          <a href="{{ event['11am'] }}">
+            <button type="button" class="btn btn-info">🕚 11AM</button>
+          </a>
+        </small>
         {%- endif -%} {%- if event.podcast -%}
         <small>
           &nbsp;&nbsp;
