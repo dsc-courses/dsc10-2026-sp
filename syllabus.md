@@ -441,8 +441,8 @@ schedule. Please refer to the [homepage of this website](..) for the most up-to-
 
 | | **Monday** | **Tuesday** | **Wednesday** | **Thursday** | **Friday** |
 | **morning** | Lecture | | Lecture | | Lecture |
-| **afternoon** | Discussion | | <b style="color:#B30014">Quiz</b> | | |
-| **evening** | <b style="color:#B30014">Homework due</b> | | | <b style="color:#B30014">Lab due</b> | |
+| **afternoon** | Discussion | | <b style="color:#B30011">Quiz</b> | | |
+| **evening** | <b style="color:#B30011">Homework due</b> | | | <b style="color:#B30011">Lab due</b> | |
 
 ---
 
@@ -602,7 +602,7 @@ Good answer, ChatGPT!
 
 </center>
 
-However, we also asked ChatGPT to tell us about permutation testing, another idea from the second half of the quarter. The answer we got back was <b><span style="color:red">wrong</span></b> in very subtle ways, though it might sound correct to someone learning about permutation testing for the first time. Thinking about why ChatGPT’s answer is wrong is a useful learning exercise.
+However, we also asked ChatGPT to tell us about permutation testing, another idea from the second half of the quarter. The answer we got back was <b><span style="color:#B30011">wrong</span></b> in very subtle ways, though it might sound correct to someone learning about permutation testing for the first time. Thinking about why ChatGPT’s answer is wrong is a useful learning exercise.
 
 <center>
 
