@@ -17,7 +17,7 @@ days:
       - name: DISC 5
         type: disc
         title: Probability and Simulation
-        url:
+        url: https://practice.dsc10.com/disc05/index.html
       - name: HW 3
         type: hw
         title: DataFrames, Control Flow, and Probability
