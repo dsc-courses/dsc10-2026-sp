@@ -30,7 +30,9 @@ days:
     events:
       - name: REV
         type: lecture
-        title: Review      
+        title: Review
+        10am: resources/lectures/rev1/review_a00.pdf
+        11am: resources/lectures/rev1/review_b00.pdf     
   - date: 2026-5-1
     events:
       - name: EXAM
