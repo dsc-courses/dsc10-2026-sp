@@ -22,15 +22,15 @@ days:
         type: hw
         title: DataFrames, Control Flow, and Probability
         url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=homeworks/hw3/hw3.ipynb
+      - name: SUR
+        type: survey
+        title: Mid-Quarter Survey
+        url: https://docs.google.com/forms/d/e/1FAIpQLScO_W6JOO0gmckJ5OVEmLajSOamFbxTUzZWmbxsiaeRumATFg/viewform?usp=dialog
   - date: 2026-4-29
     events:
       - name: REV
         type: lecture
-        title: Review
-      - name: SUR
-        type: survey
-        title: Mid-Quarter Survey
-        url:
+        title: Review      
   - date: 2026-5-1
     events:
       - name: EXAM
