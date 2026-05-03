@@ -17,7 +17,7 @@ days:
       - name: DISC 6
         type: disc
         title: Sampling, Bootstrapping, and Confidence Intervals
-        url:
+        url: https://practice.dsc10.com/disc06/index.html
   - date: 2026-5-5
     events:
       - name: PROJ
