@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 plt.style.use('seaborn-v0_8-colorblind')
 plt.rcParams['figure.figsize'] = (10, 5)
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
@@ -42,7 +42,7 @@ def normal_area(a, b, bars=False):
     x = np.linspace(-4, 4, 1000)
     y = normal_curve(x)
     ix = (x >= a) & (x <= b)
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(8, 4))
     plt.plot(x, y, color='black')
     plt.fill_between(x[ix], y[ix], color='gold')
     if bars:
