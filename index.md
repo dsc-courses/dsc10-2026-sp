@@ -33,8 +33,9 @@ This site is **under construction**. Anything you read here is not finalized. Th
 >Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
 -->
 
-{: .success }
+<!--{: .success }
 The Midterm Exam is **this Friday, May 1st during lecture in PODEM 1A19**.
+-->
 
 
 <a id="jump-to-current-week" href="/#{{ site.modules.first.title | slugify }}" class="btn">Jump to the current week</a>
