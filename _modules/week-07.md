@@ -17,7 +17,7 @@ days:
       - name: DISC 7
         type: disc
         title: The Normal Distribution and the CLT
-        url:
+        url: https://practice.dsc10.com/disc07/index.html
       - name: HW 4
         type: hw
         title: Simulation, Sampling, & Bootstrapping
