@@ -27,8 +27,8 @@ days:
       - name: LEC 18
         type: lecture
         title: Choosing Sample Sizes, Statistical Models
-        url:
-        html:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=lectures/lec18/lec18-live.ipynb
+        html: resources/lectures/lec18/lec18.html
         podcast:
         readings:
           - name: CIT 14.6

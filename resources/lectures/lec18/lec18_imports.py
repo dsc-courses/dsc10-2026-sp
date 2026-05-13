@@ -35,7 +35,7 @@ gold = (0.9411764705882353, 0.8941176470588236, 0.25882352941176473)
 pink = (0.8, 0.4745098039215686, 0.6549019607843137)
 #-
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
@@ -71,6 +71,6 @@ def area_within(z):
 
 def show_clt_slides():
     src = "https://docs.google.com/presentation/d/1_CjPpUgqENmW8YgN3YUNkJckh9LyAtqu4UJR7FA_eE8/embed?start=false&loop=false&delayms=3000&rm=minimal"
-    width = 960
-    height = 509
+    width = 700
+    height = 350
     display(IFrame(src, width, height))
