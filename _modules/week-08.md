@@ -38,7 +38,7 @@ days:
         keywords: confidence intervals for hypothesis testing, body temperature, smoking/babies
       - name: QUIZ 3
         type: quiz
-        title: Quiz 3 covers Lectures 13-17
+        title: Quiz 3 covers Lectures 13-18 (excluding Statistical Models)
   - date: 2026-5-21
     events:
       - name: LAB 6
