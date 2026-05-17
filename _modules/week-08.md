@@ -19,7 +19,7 @@ days:
       - name: DISC 8
         type: disc
         title: Hypothesis Testing and Permutation Testing
-        url:
+        url: https://practice.dsc10.com/disc08/index.html
       - name: HW 5
         type: hw
         title: The Normal Distribution and the Central Limit Theorem
