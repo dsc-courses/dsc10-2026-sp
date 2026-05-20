@@ -30,7 +30,7 @@ days:
       - name: PROJ
         type: proj
         title: Final Project
-        url:
+        url: http://datahub.ucsd.edu/user-redirect/git-sync?repo=https://github.com/dsc-courses/dsc10-2026-sp&subPath=projects/final_project/final_project.ipynb
   - date: 2026-6-5
     events:
       - name: REV
