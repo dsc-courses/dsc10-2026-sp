@@ -33,8 +33,8 @@ This site is **under construction**. Anything you read here is not finalized. Th
 >Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
 -->
 
-{: .warning }
-We have updated the coverage of Quizzes 3 and 4. Quiz 3, coming up on **Wednesday, May 20th** covers Lectures 13 through 18, excluding the later part of Lecture 18 on statistical models. That content will be covered in Quiz 4. 
+{: .note }
+Quiz 4, coming up on **Wednesday, May 27th** covers Lectures 18 (starting with statistical models) through 22. 
 
 
 <a id="jump-to-current-week" href="/#{{ site.modules.first.title | slugify }}" class="btn">Jump to the current week</a>
