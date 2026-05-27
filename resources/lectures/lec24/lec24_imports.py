@@ -9,7 +9,7 @@ plt.style.use('seaborn-v0_8-colorblind')
 from IPython import get_ipython
 get_ipython().run_line_magic('config', "InlineBackend.figure_formats = ['svg']")
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
@@ -59,12 +59,12 @@ def plot_regression_line(df, x, y, margin=.02):
     m = slope(df, x, y)
     b = intercept(df, x, y)
     
-    df.plot(kind='scatter', x=x, y=y, s=100, figsize=(10, 5), label='original data')
+    df.plot(kind='scatter', x=x, y=y, s=60, figsize=(8, 4), label='original data')
     left = df.get(x).min()*(1 - margin)
     right = df.get(x).max()*(1 + margin)
     domain = np.linspace(left, right, 10)
-    plt.plot(domain, m*domain + b, color=orange, label='regression line', lw=4)
-    plt.suptitle(format_equation(m, b), fontsize=18)
+    plt.plot(domain, m*domain + b, color=orange, label='regression line', lw=3)
+    plt.suptitle(format_equation(m, b), fontsize=14)
     plt.legend();
 
 def format_equation(m, b):
@@ -78,7 +78,7 @@ def format_equation(m, b):
 def plot_errors(df, m, b, ax=None):
     x = df.get('x')
     y = m * x + b
-    df.plot(kind='scatter', x='x', y='y', s=100, label='original data', ax=ax, figsize=(10, 5) if ax is None else None)
+    df.plot(kind='scatter', x='x', y='y', s=60, label='original data', ax=ax, figsize=(8,4) if ax is None else None)
     
     if ax:
         plotter = ax
@@ -91,11 +91,11 @@ def plot_errors(df, m, b, ax=None):
         xk = df.get('x').iloc[k]
         yk = np.asarray(y)[k]
         if k == df.shape[0] - 1:
-            plotter.plot([xk, xk], [yk, df.get('y').iloc[k]], linestyle=(0, (1, 1)), c='r', lw=4, label='errors')
+            plotter.plot([xk, xk], [yk, df.get('y').iloc[k]], linestyle=(0, (1, 1)), c='r', lw=3, label='errors')
         else:
-            plotter.plot([xk, xk], [yk, df.get('y').iloc[k]], linestyle=(0, (1, 1)), c='r', lw=4)
+            plotter.plot([xk, xk], [yk, df.get('y').iloc[k]], linestyle=(0, (1, 1)), c='r', lw=3)
     
-    plt.title(format_equation(m, b), fontsize=18)
+    plt.title(format_equation(m, b), fontsize=14)
     plt.xlim(50, 90)
     plt.ylim(40, 100)
     plt.legend();

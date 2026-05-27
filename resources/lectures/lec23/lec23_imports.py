@@ -8,24 +8,10 @@ plt.style.use('seaborn-v0_8-colorblind')
 from IPython import get_ipython
 get_ipython().run_line_magic('config', "InlineBackend.figure_formats = ['svg']")
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
-
-from IPython.display import display, IFrame, HTML
-
-def show_permutation_testing_intro():
-    src="https://docs.google.com/presentation/d/1_bT-CPK7u8bItbDmTie1-IBgMp7k3e9YMA_v7ICequM/embed?start=false&loop=false&delayms=60000&rm=minimal"
-    width = 965
-    height = 635
-    display(IFrame(src, width, height))
-
-def show_permutation_testing_summary():
-    src = "https://docs.google.com/presentation/d/13grhudxd3_KBmY26tGimeYWYZNCo0BU-Nz4LsUyOI_M/embed?start=false&loop=false&delayms=60000&rm=minimal"
-    width = 960
-    height = 569
-    display(IFrame(src, width, height))
 
 green = (0.0, 0.6196078431372549, 0.45098039215686275)
 orange = (0.8352941176470589, 0.3686274509803922, 0.0)
@@ -48,13 +34,13 @@ def r_scatter(r):
     plt.title(f'$r={r}$')
 
 def show_scatter_grid():
-    plt.subplots(1, 4, figsize=(10, 2))
+    plt.subplots(1, 4, figsize=(8, 2))
     for i, r in enumerate([-1, -2/3, -1/3, 0]):
         plt.subplot(1, 4, i+1)
         r_scatter(r)
         plt.title(f'r = {np.round(r, 2)}')
     plt.show()
-    plt.subplots(1, 4, figsize=(10, 2))
+    plt.subplots(1, 4, figsize=(8, 2))
     for i, r in enumerate([1, 2/3, 1/3]):
         plt.subplot(1, 4, i+1)
         r_scatter(r)
