@@ -17,7 +17,7 @@ days:
       - name: DISC 9
         type: disc
         title: Regression
-        url:
+        url: https://practice.dsc10.com/disc10/index.html
       - name: LAB 7
         type: lab
         title: Regression
