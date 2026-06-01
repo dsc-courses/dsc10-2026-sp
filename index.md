@@ -21,11 +21,11 @@ nav_order: 1
 <!--{: .warning }
 This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Spring 2026.-->
 
-<!--{: .success }
->The Final Exam is **this Saturday, June 7th from 11:30AM to 2:30PM in CENTER 101**.
+{: .success }
+>The Final Exam is **this Saturday, June 6th from 3 to 6PM in Pepper Canyon 106**. See [Campuswire](https://campuswire.com/c/G65427605/feed/211) for more details!
 >
->Earn 1 participation point by filling out both [SETs](https://academicaffairs.ucsd.edu/Modules/Evals/) and the internal [End-of-Quarter Survey](https://forms.gle/hWqgRBp4B45LDMLW9) before Saturday, June 7th at 8AM.
--->
+>Earn 1 participation point by filling out both [SETs](https://academicaffairs.ucsd.edu/Modules/Evals/) and the internal [End-of-Quarter Survey](https://forms.gle/BoRKzpGu7eduDUUT6) before Saturday, June 6th at 8AM.
+
 
 <!--{: .success }
 >**Tip**: When working on assignments, use Ctrl+F on this page to search for a keyword and quickly find the relevant lecture. Click the "✏️ write" button to open a static version of the lecture for reference, which is much faster than loading it on DataHub.
@@ -33,8 +33,9 @@ This site is **under construction**. Anything you read here is not finalized. Th
 >Also, make sure to use the [reference sheet]({{site.urls.reference}}) to quickly look up `babypandas` methods and see examples of how they work.
 -->
 
-{: .note }
+<!--{: .note }
 Quiz 4, coming up on **Wednesday, May 27th** covers Lectures 18 (starting with statistical models) through 22. 
+-->
 
 
 <a id="jump-to-current-week" href="/#{{ site.modules.first.title | slugify }}" class="btn">Jump to the current week</a>
