@@ -9,7 +9,7 @@ plt.style.use('seaborn-v0_8-colorblind')
 from IPython import get_ipython
 get_ipython().run_line_magic('config', "InlineBackend.figure_formats = ['svg']")
 
-np.set_printoptions(threshold=20, precision=2, suppress=True)
+np.set_printoptions(threshold=20, precision=2, suppress=True, legacy='1.21')
 pd.set_option("display.max_rows", 7)
 pd.set_option("display.max_columns", 8)
 pd.set_option("display.precision", 2)
@@ -54,11 +54,11 @@ def plot_regression_line(df, x, y, margin=.02, alpha=1, resid=False):
     m = slope(df, x, y)
     b = intercept(df, x, y)
     
-    df.plot(kind='scatter', x=x, y=y, s=50, figsize=(10, 5), label='original data', alpha=alpha)
+    df.plot(kind='scatter', x=x, y=y, s=50, figsize=(8, 4), label='original data', alpha=alpha)
     left = df.get(x).min()*(1 - margin)
     right = df.get(x).max()*(1 + margin)
     domain = np.linspace(left, right, 10)
-    plt.plot(domain, m*domain + b, color=orange, label='regression line', lw=4)
+    plt.plot(domain, m*domain + b, color=orange, label='regression line', lw=3)
     plt.suptitle(format_equation(m, b), fontsize=18)
     plt.legend();
     
@@ -89,7 +89,7 @@ def format_equation(m, b):
         return r'$y = %.2fx %.2f$' % (m, b)
 
 def draw_many_lines(m_boot, b_boot):
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(8, 4))
     x = np.arange(50, 80)
     ys = []
     for i, (m, b) in enumerate(zip(m_boot[:50], b_boot)):
