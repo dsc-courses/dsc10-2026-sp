@@ -40,7 +40,7 @@ days:
     events:
       - name: EXAM
         type: exam
-        title: <b>Final Exam (3-6PM)</b>
+        title: <b>Final Exam (3-6PM in PCYNH 106)</b>
       - name: SUR
         type: survey
         title: SETs and End-of-Quarter Survey (due 8AM)

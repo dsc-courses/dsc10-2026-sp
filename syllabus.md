@@ -408,7 +408,7 @@ Exams and quizzes are designed to test your understanding of course material, th
 This class has one Midterm Exam and one Final Exam:
 
 - Midterm Exam: Friday, May 1st, **during your enrolled lecture slot**.
-- Final Exam: Saturday, June 6th from 3PM to 6PM, location TBD.
+- Final Exam: Saturday, June 6th from 3PM to 6PM, in PCYNH 106.
 
 Exams are cumulative, though the Final Exam will emphasize material after the Midterm Exam. Both exams will be held **in-person and on-paper**. You'll be allowed to use one 8.5 by 11 inch page of double-sided handwritten notes, but no calculators, computers, or other resources.
 
