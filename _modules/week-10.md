@@ -28,7 +28,7 @@ days:
         type: lecture
         title: Review
         10am: resources/lectures/rev2/lec26_10am.pdf
-        11am: resources/lectures/rev2/lec26_11am.pdf 
+        11am: resources/lectures/rev2/lec26_11am.pdf
       - name: PROJ
         type: proj
         title: Final Project
@@ -38,6 +38,8 @@ days:
       - name: REV
         type: lecture
         title: Review, Conclusion
+        10am: resources/lectures/rev3/final_review_10am.pdf
+        11am: resources/lectures/rev3/final_review_11am.pdf
   - date: 2026-6-6
     events:
       - name: EXAM
