@@ -27,8 +27,8 @@ days:
       - name: REV
         type: lecture
         title: Review
-        10am: resources/lectures/rev1/lec26_10am.pdf
-        11am: resources/lectures/rev1/lec26_11am.pdf 
+        10am: resources/lectures/rev2/lec26_10am.pdf
+        11am: resources/lectures/rev2/lec26_11am.pdf 
       - name: PROJ
         type: proj
         title: Final Project
